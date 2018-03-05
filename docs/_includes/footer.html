@@ -1,0 +1,40 @@
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+
+          <li>{{ site.kurssin_nimi }}</li>
+          <li>{{ site.kurssin_ajankohta }}</li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+
+          <li style="text-align: center;">
+            TiM@<a href="http://www.tut.fi/pori">pori</a>.<a href="http://www.tut.fi/">tut.fi</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+
+        <ul class="social-media-list">
+
+          {% if page.modified_at %}
+          <li  style="text-align: right;">
+            Sivua päivitetty: {{page.modified_at}}
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+    </div><!-- footer-col-wrapper -->
+  </div><!-- wrapper -->
+</footer>

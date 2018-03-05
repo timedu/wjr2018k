@@ -1,0 +1,72 @@
+
+# Site settings
+
+title: WJr2018k # kurssitoteutuksen tunnus
+baseurl: "/wjr2018k"
+
+kurssin_nimi: "Web-järjestelmät"
+kurssin_ajankohta: "Kevät 2018"
+
+discussion_address: "https://moodle2.tut.fi/mod/forum/discuss.php?d="
+upload_address: "https://moodle2.tut.fi/mod/vpl/view.php?id="
+
+review_address: "https://moodle2.tut.fi/mod/url/view.php?id=377398"
+
+moodle_address: "https://moodle2.tut.fi/course/view.php?id=11638"
+news_address: "https://moodle2.tut.fi/mod/forum/view.php?id=377396"
+
+
+# Build settings
+
+markdown: kramdown
+
+collections:
+
+  osa1:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 1
+    otsikko: "JS - oliot, moduulit, mvc"
+    julkaisu: 7.3.2018
+
+  osa2:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 2
+    otsikko: "Backbone I"
+    julkaisu: 20.3.2018
+
+  osa3:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 3
+    otsikko: "Backbone II"
+    julkaisu: 3.4.2018
+
+  osa4:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 4
+    otsikko: "Angular I"
+    julkaisu: 17.4.2018
+
+  osa5:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 5
+    otsikko: "Angular II"
+    julkaisu: 24.4.2018
+
+  osa6:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 6
+    otsikko: "React I"
+    julkaisu: 8.5.2018
+
+  osa7:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 7
+    otsikko: "React II"
+    julkaisu: 15.5.2018
