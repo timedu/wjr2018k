@@ -3,10 +3,13 @@ layout: site_page
 title: Viitteet
 permalink: /viitteet/index.html
 site_menu: 1
-modified_at: 5.3.2018
+modified_at: 7.3.2018
 ---
 
-Viitteet
+
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (MDN)   
+[Web-selainohjelmointi](http://web-selainohjelmointi.github.io/) (Helsingin yliopisto)  
+
 
 {% comment %}
 
