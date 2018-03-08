@@ -47,7 +47,7 @@ Oliokaaviona syntynyt tilanne näyttää seuraavanlaiselta:
 
 #### Tehtäväpohjan käyttöliittymä
 
-Tehtäväpohjassa on tässä laadittavaa funktiota käyttävä valmis käyttöliittymä:
+[Tehtäväpohjassa](../tehtavapohjasta) on tässä laadittavaa funktiota käyttävä valmis käyttöliittymä:
 
 ![Käyttöliittymä](../img/puhelinmuistio_ui.png "Käyttöliittymä"){: style="display: block; margin: auto; margin-top: 10px; width: 500px;"}
 

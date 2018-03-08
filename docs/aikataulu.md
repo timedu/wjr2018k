@@ -2,7 +2,7 @@
 layout: site_page
 title: Aikataulu
 permalink: /aikataulu/index.html
-modified_at: 5.3.2018
+modified_at: 7.3.2018
 ---
 
 Kurssi jakaantuun seitsämään osaan. Seuraavassa taulukossa on kuhunkin osaan liittyvät ajankohdat koskien materiaalin julkaisua (M), kontaktitunteja (K) sekä tehtävien palautusta (P). Taulukon lopussa on tenttiajankohdat (T).

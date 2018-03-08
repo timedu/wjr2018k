@@ -1,7 +1,7 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-modified_at: 7.3.2018
+modified_at: 8.3.2018
 ---
 
 JavaScript-ohjelmissa käsitellään oliota, vaikka kieli ei sisällä Java-kielen kaltaisia luokkia. Oliot eivät kapseloi ominaisuuksiaan, mutta modulointiin on käytettävissä kielessä muita mekanismeja. Kurssin ensimmäisessä osassa tarkastellaan hieman JavaScriptin piirteitä, jotka poikkeavat selvästi esim. Java-kielestä.
@@ -20,13 +20,25 @@ Tehtävät ovat modifikaatioita *Web-selainohjelmointi* -lukemiston
 
 ### Lisätietoja
 
-JavaScriptin olioita ja moduuleja käsitellään oheislukemiston luvuissa
+Tämän osan tehtävissä esillä olevia JavaScriptin olioita ja moduuleja käsitellään
+Helsingin yliopiston *Web-selainohjelmointi* -materiaalin luvuissa
 [6. Lisää JavaScriptistä](http://web-selainohjelmointi.github.io/#6-Lisää-JavaScriptistä)
 ja
 [8. Oliot ja Moduulit](http://web-selainohjelmointi.github.io/#8-Oliot-ja-Moduulit).
 Luku
 [9. MV* ja Web-sovelluksen rakenne](http://web-selainohjelmointi.github.io/#9-MV*-ja-Web-sovelluksen-rakenne)
 esittelee erilaisten MVC -mallien JavaScript-toteutuksia.
+
+[MDN:n][mdn] sivustolla on kattava [JavaScript-materiaali][mdn-js]. Jos kieli ei ole aivan lähimuistissa, sivustolta voi poimia luettavaksi sivun [A re-introduction to JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript/A_re-introduction_to_JavaScript).
+
+[mdn]: https://developer.mozilla.org/fi/docs/Web
+[mdn-js]: https://developer.mozilla.org/bm/docs/Web/JavaScript
+
+*Udacity:ssä* voi opiskella (veloituksetta) johdanto-tason yläpuolelle asettuvia verkkokursseja
+[Object-Oriented JavaScript][ud015] ja [ES6 - JavaScript Improved][ud356].
+
+[ud015]: https://eu.udacity.com/course/object-oriented-javascript--ud015
+[ud356]: https://eu.udacity.com/course/es6-javascript-improved--ud356
 
 
 {% comment %}
