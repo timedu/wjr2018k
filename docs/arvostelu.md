@@ -2,7 +2,7 @@
 layout: site_page
 title: Arvostelu
 permalink: /arvostelu/index.html
-modified_at: 5.3.2018
+modified_at: 14.3.2018
 ---
 
 
@@ -19,3 +19,7 @@ modified_at: 5.3.2018
 * n. 50 % suoritus tentistä: + 0
 * n. 70 % suoritus tentistä: + 1
 * n. 90 % suoritus tentistä: + 2
+
+#### Tehtävien arvostelusta
+
+Kurssin jokaiseen osaan sisältyy tehtäväjoukko, jotka ovat pisteytyksen osalta samanarvoisia. Vähiten pisteitä tuottanut tehtäväjoukko jätetään arvostelussa huomioimatta.
