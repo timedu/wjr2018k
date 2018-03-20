@@ -13,6 +13,8 @@ modified_at: 7.3.2018
 
 {% comment %}
 
+[Backbone, The Primer](https://github.com/jashkenas/backbone/wiki/Backbone%2C-The-Primer)
+<https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 
 #### HTML
 

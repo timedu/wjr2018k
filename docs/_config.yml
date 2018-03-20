@@ -33,40 +33,40 @@ collections:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 2
-    otsikko: "Backbone I"
+    otsikko: "Backbone"
     julkaisu: 20.3.2018
 
   osa3:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 3
-    otsikko: "Backbone II"
+    otsikko: "Angular I"
     julkaisu: 3.4.2018
 
   osa4:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 4
-    otsikko: "Angular I"
+    otsikko: "Angular II"
     julkaisu: 17.4.2018
 
   osa5:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 5
-    otsikko: "Angular II"
+    otsikko: "React I"
     julkaisu: 24.4.2018
 
   osa6:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 6
-    otsikko: "React I"
+    otsikko: "React II"
     julkaisu: 8.5.2018
 
   osa7:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 7
-    otsikko: "React II"
+    otsikko: "tbd"
     julkaisu: 15.5.2018
