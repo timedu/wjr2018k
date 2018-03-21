@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 2.5: Clock (2p)"
+title: "Tehtävä 2.5: Clock (1p)"
 exercise_template_name: #
 exercise_discussion_id: # 97784
 exercise_upload_id: # 380364
