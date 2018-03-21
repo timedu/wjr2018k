@@ -1,9 +1,9 @@
 ---
 layout: exercise_page
-title: "Tehtävä 2.5 Clock (2p)"
+title: "Tehtävä 2.5: Clock (2p)"
 exercise_template_name: #
-exercise_discussion_id: #
-exercise_upload_id: #
+exercise_discussion_id: # 97784
+exercise_upload_id: # 380364
 kesken:  1
 no_review: 1
 julkaisu: 21.3.2018

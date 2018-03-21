@@ -1,8 +1,8 @@
 ---
 layout: exercise_page
 title: "Tehtävä 2.2: Template Counter (1p)"
-exercise_template_name: #
-exercise_discussion_id: #
+exercise_template_name: # 380361
+exercise_discussion_id: # 97781
 exercise_upload_id: #
 kesken:  1
 no_review: 1

@@ -7,7 +7,7 @@ exercise_upload_id: 378570
 modified_at: 7.3.2018
 ---
 
-Laadi puhelinmuistiosta MVC-sunnittelumallia mukaileva toteutus. Ratkaisu koostuu kolmesta `new`-operaattorilla kursuttavasta funktiosta, `Model`, `View` ja `Controller`, jotka laaditaan tehtäväpohjan `todo`-hakemistossa oleviin tiedostoihin, `model.js`, `view.js` ja `controller.js`.
+Laadi puhelinmuistiosta MVC-sunnittelumallia mukaileva toteutus. Ratkaisu koostuu kolmesta `new`-operaattorilla kutsuttavasta funktiosta, `Model`, `View` ja `Controller`, jotka laaditaan tehtäväpohjan `todo`-hakemistossa oleviin tiedostoihin, `model.js`, `view.js` ja `controller.js`.
 
 *Malliin* (`Model`) tallennetaan puhelinmuistion data. *Näkymä* (`View`) rakentaa käyttöliittymän mallin datalle. *Kontrolleri* (`Controller`) vastaanottaa käyttöliitymästä mallin dataan liittyviä pyyntöjä. Sovelluksen alustuksen (`js/app.js`) jälkeen muistio toimii seuraavan kaavion mukaan:
 
@@ -109,4 +109,4 @@ Tehtävän ratkaisu on periatteeltaan samankaltainen kuin oheismateriaalin [kohd
 
 <small>Kuva 3. Muistutus-olio.</small>
 
-Esimerkissä on tähän tehtävään verrattuna rakenteellisia tasoja enemmän. Kukin muodostinfunktio on paketoitu omaan olioonsa (`view`, `domain`, `controller`) ja muodostimille on annettu niiden tehtävää kuvaavat nimet. Tämä ratkaisu on luonteva erityisesti silloin, kun sovelluksessa on useita *malleja*, *näkymiä* ja/tai *kontrollereita*. 
+Esimerkissä on tähän tehtävään verrattuna rakenteellisia tasoja enemmän. Kukin muodostinfunktio on paketoitu omaan olioonsa (`view`, `domain`, `controller`) ja muodostimille on annettu niiden tehtävää kuvaavat nimet. Tämä ratkaisu on luonteva erityisesti silloin, kun sovelluksessa on useita *malleja*, *näkymiä* ja/tai *kontrollereita*.

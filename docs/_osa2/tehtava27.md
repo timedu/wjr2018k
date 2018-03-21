@@ -1,9 +1,9 @@
 ---
 layout: exercise_page
-title: "Tehtävä 2.7 Taskit (3p)"
+title: "Tehtävä 2.7: Taskit (3p)"
 exercise_template_name: #
-exercise_discussion_id: #
-exercise_upload_id: #
+exercise_discussion_id: # 97786
+exercise_upload_id: # 380366
 kesken:  1
 no_review: 1
 julkaisu: 21.3.2018

@@ -1,9 +1,9 @@
 ---
 layout: exercise_page
-title: "Tehtävä 2.4 Person (1p)"
+title: "Tehtävä 2.4: Person (1p)"
 exercise_template_name: #
-exercise_discussion_id: #
-exercise_upload_id: #
+exercise_discussion_id: # 97783
+exercise_upload_id: # 380363
 kesken:  1
 no_review: 1
 julkaisu: 21.3.2018
