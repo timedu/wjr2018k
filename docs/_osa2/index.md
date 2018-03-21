@@ -12,6 +12,8 @@ modified_at: 20.3.2018
 
 {% include exercises_list.md %}
 
+<small>Tehtävät ovat modifikaatioita Helsingin yliopiston Web-selainohjelmointi -kurssin aineistoon sisältyvistä tehtävistä.</small>
+
 ### Lisätietoja
 
 [Developing Backbone.js Applications](https://addyosmani.com/backbone-fundamentals/) by *Addy Osmani*   
