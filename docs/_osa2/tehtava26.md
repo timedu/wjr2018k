@@ -55,7 +55,9 @@ Myös palauteviestien esittämisessä tulee tukeutua tapahtumiin:
 
 ![Diagram 2](../img/w2e06-diagram-2.png "Diagram 2"){: style="display: block; margin: auto; margin-top: 10px; width: 600px; padding: 5px; border: thin solid lightgray; border-radius: 5px;"}
 
-<small>Kaavio 2.</small>
+<small>Kaavio 2.[^kaavio2]</small>
+
+[^kaavio2]: Kaaviossa tekstin `freedback` tilalla pitäisi olla teksti `feedback`.
 
 Tiedot talletetaan [Backbone-kokoelmaan][collectiom], joka on luotu tässä laadittavalla muodostimella `EntryCollection`. Kokoelma näkyy ao. näkymissä muuttujassa `this.collection`. Kokoelman `model`-ominaisuuteen tulee määritellä "freesiys"-arvon validoinnin suorittava malli. Kokoelmalla tulee olla myös metodi `avgFreshness`, joka palauttaa kokoelmaan talletettujen freesiys-arvojen keskiarvon.
 
