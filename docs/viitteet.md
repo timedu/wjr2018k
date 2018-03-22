@@ -13,6 +13,14 @@ modified_at: 7.3.2018
 
 {% comment %}
 
+
+[Developing Backbone.js Applications](https://addyosmani.com/backbone-fundamentals/) by *Addy Osmani*   
+[Learn Backbone.js](https://eu.udacity.com/course/learn-backbonejs--ud990) by *Udacity*   
+[Backbone, The Primer](https://github.com/jashkenas/backbone/wiki/Backbone%2C-The-Primer)   
+[Communicating between views in Backbone](https://veerasundar.com/blog/2013/04/communicating-between-views-in-backbone/)   
+[Backbone.js and Handlebars.js example](https://gist.github.com/kyleondata/3440492)
+
+
 [Backbone, The Primer](https://github.com/jashkenas/backbone/wiki/Backbone%2C-The-Primer)
 <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 
