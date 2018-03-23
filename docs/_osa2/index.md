@@ -23,7 +23,9 @@ Neljässä ensimmäisessä tehtävässä toteutetaan yksinkertainen laskuri hiem
 
 Seuraavat kaksi tehtävää ovat keskenään samarakenteisia. Molemmissa on *malli* ja *näkymä*, ja käyttöliittymän päivitys tapahtuu *templaten* avulla. Molempien sovellusten näkymät myös reagoivat käyttöliittymän klikkauksiin. [Tehtävässä 2.4](tehtava24) sivulla esitetään henkilön tietoja siten, että sivun klikkaus aiheuttaa henkilö iän kasvamisen. [Tehtävässä 2.5](tehtava25) on kello, jonka tikitys käynnistyy ja pysähtyy sitä klikkaamalla. Jälkimmäisen tehtävän kuvaus ottaa edelliseen verrattuna jokin verran enemmän kantaa ratkaisun toteutusperiaatteeseen.
 
+[Tehtävässä 2.6](tehtava26) rakennettava unipäiväkirja -sovellus on aiempiin tehtäviin nähden hieman laajempi. Käyttäjän näkökulmasta sovellus muodostuu useasta sivusta vaikka se teknisesti on vain yksisivuinen. Sovellus muodostuu neljästä *näkymästä* ja yhdestä *malleja* sisältävästä *kokoelmasta*.  Näkymistä kolme käyttää *templatea* käyttöliittymän muokkaamiseen. Näkymät kommunikoivat keskenään *tehtävän 2.3a* tapaan itse määriteltyjen tapahtumien avulla.
 
+Tehtävissä 2.7 ja 2.8 rakennetaan käyttäjän kannalta samanlaiset tehtävälista-sovellukset, joilla käyttäjä voi lisätä listaan uusia tehtäviä sekä muuttaa listassa olevien tehtävien statusta. [Tehtävässä 2.7](tehtava27) lista talletetaan ainoastaan *kokoelmaan*, mutta [Tehtävässä 2.8](tehtava28) tiedot välittyvät kokoelman kautta web-palvelulle.
 
 
 

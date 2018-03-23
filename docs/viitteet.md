@@ -14,6 +14,8 @@ modified_at: 7.3.2018
 {% comment %}
 
 
+<https://www.cs.helsinki.fi/group/java/s12-weso/>
+
 [Developing Backbone.js Applications](https://addyosmani.com/backbone-fundamentals/) by *Addy Osmani*   
 [Learn Backbone.js](https://eu.udacity.com/course/learn-backbonejs--ud990) by *Udacity*   
 [Backbone, The Primer](https://github.com/jashkenas/backbone/wiki/Backbone%2C-The-Primer)   
