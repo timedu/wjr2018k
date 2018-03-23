@@ -1,7 +1,7 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-modified_at: 22.3.2018
+modified_at: 23.3.2018
 ---
 
 [Backbone-kirjaston](http://backbonejs.org) avulla selainpäässä ajettavalle sovellukselle voidaan muodostaa [MVC][MVC]-tyyppisiä rakenteita. Soveluksen keskeisiä rakenneosia ovat *näkymät* (view), *mallit* (model) ja *kokoelmat* (collection). *Näkymä* on linkki käyttöliittymänä toimivan dokumentin ja muun sovelluksen välillä. Sen tehtävä on reagoida dokumentin tapahtumiin, esim. painikkeiden klikkauksiin, sekä lukea ja muokata selaimessa olevaa dokumentia. *Malli* ylläpitää joukkoa avain-arvo -pareja. Se voi mm. kelpoistaa tiedot ennen tietojen tallettamista malliin. *Kokoelma* taas edustaa mallien joukkoa. Sen voi kytkeä suoraan [REST][REST]-rajapinnan toteuttavaan web-palveluun, jolloin tietojen välitys kokoelman ja palvelun välillä toimii saumattomasti - esim. uuden mallin lisääminen kokoelmaan aikaansaa sen, että mallin sisältämät tiedot välittyvät automaattisesti web-palveluun. *Näkymän* voi asettaa seuraamaan mallin ja kokoelman tietosisällössä tapahtuvia muutoksia, joihin malli voi reagoida esim. esittämällä muuttuneet tiedot selaimessa olevassa dokumentissa.
@@ -20,6 +20,11 @@ Kurssin tämän osan tehtävät ovat modifikaatioita Helsingin yliopiston Web-se
 Neljässä ensimmäisessä tehtävässä toteutetaan yksinkertainen laskuri hieman erilaisin periaattein. [Tehtävässä 2.1](tehtava21) muodostetaan Backbone-näkymä, joka reagoi käyttöliitymässä olevan painikkeen klikkauksiin muuttamalla ylläpitämänsä laskurin arvoa ja esittällä muuttuneen arvon käyttöliittymässä. [Tehtävässä 2.2](tehtava22) käyttöliittymän muutokset toteutetaan [Handlebars][Handlebars]-templaten avulla. [Tehtävän 2.3a](tehtava23a) ratkaisu perustuu kahteen näkymään, joista toinen reagoi käyttöliittymän painikkeen klikkauksiin ja toinen ylläpitää laskurin arvoa ja esittää sen käyttöliittymässä. Kommunikointi näkymien välillä toteutetaan itse määritellyn tapahtuman avulla. [Tehtävässä 2.3b](tehtava23b) on kahden näkymän lisäksi laskurin arvoa ylläpitävä malli. Toinen näkymistä reagoi painikkeen klikkaukseen muuttamalla mallia. Toinen näkymä seuraa mallissa tapahtuvia muutoksia, ja niiden seurauksena lukee mallista laskurin arvon ja esittää sen käyttöliittymässä.
 
 [Handlebars]: http://handlebarsjs.com
+
+Seuraavat kaksi tehtävää ovat keskenään samarakenteisia. Molemmissa on *malli* ja *näkymä*, ja käyttöliittymän päivitys tapahtuu *templaten* avulla. Molempien sovellusten näkymät myös reagoivat käyttöliittymän klikkauksiin. [Tehtävässä 2.4](tehtava24) sivulla esitetään henkilön tietoja siten, että sivun klikkaus aiheuttaa henkilö iän kasvamisen. [Tehtävässä 2.5](tehtava25) on kello, jonka tikitys käynnistyy ja pysähtyy sitä klikkaamalla. Jälkimmäisen tehtävän kuvaus ottaa edelliseen verrattuna jokin verran enemmän kantaa ratkaisun toteutusperiaatteeseen.
+
+
+
 
 
 ### Lisätietoja
