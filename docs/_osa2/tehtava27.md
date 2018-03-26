@@ -4,7 +4,7 @@ title: "Tehtävä 2.7: Taskit (3p)"
 exercise_template_name: W2E07.Taskit
 exercise_discussion_id: 97786
 exercise_upload_id: 380366
-modified_at: 22.3.2018
+modified_at: 26.3.2018
 ---
 
 Toteuta sovellus tehtävien hallintaan. Tehtävä sisältää seuraavat tiedot: `id`, `title` ja `completed`.
@@ -59,6 +59,8 @@ Näkymän `listTaskView` kautta tapahtuu myös tehtävän tilan muutos, mikä k�
 [get]: http://backbonejs.org/#Model-get
 [set]: http://backbonejs.org/#Model-set
 
-**Palauta** tehtävän ratkaisuna tiedostot  `AddTaskView.js` ja `ListTasksView.js`.
+**Palauta** tehtävän ratkaisuna tiedostot  `AddTaskView.js` ja `ListTasksView.js`. Varmista ennen palautusta, että tehtäväpohjan testit[^testit] menevät läpi (`SpecRunner.html`).
+
+[^testit]: Testit lisätty pohjaan 26.3.2018. Testit edellyttävät, että `ListTasksView`-näkymään liittyvä `template`-funktio määritellään `initialize`-funktiossa: `this.template = Handlebars.compile($('#list-tasks-template').html());`
 
 <br/>

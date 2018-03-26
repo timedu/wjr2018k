@@ -13,6 +13,8 @@ modified_at: 7.3.2018
 
 {% comment %}
 
+[Testing Backbone applications with Jasmine and Sinon](https://tinnedfruit.com/articles/testing-backbone-apps-with-jasmine-sinon.html)
+
 
 <https://www.cs.helsinki.fi/group/java/s12-weso/>
 

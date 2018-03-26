@@ -7,7 +7,7 @@ exercise_upload_id: 380365
 modified_at: 21.3.2018
 ---
 
-Tehtävässä on toteutettavana unipäiväkirja, jossa on kaksi toimintoa: *unen lisääminen* ja *unistatistiikan listaaminen*. Jokaisesta nukkumisesta kerätään *alkuaika*, *loppuaika, ja *freesiys (1-5)*. Sovelluksen latauduttua, selain esittää seuraavanlaisen sivun:
+Tehtävässä on toteutettavana unipäiväkirja, jossa on kaksi toimintoa: *unen lisääminen* ja *unistatistiikan listaaminen*. Jokaisesta nukkumisesta kerätään *alkuaika*, *loppuaika*, ja *freesiys (1-5)*. Sovelluksen latauduttua, selain esittää seuraavanlaisen sivun:
 
 ![Sleepy UI](../img/w2e06-sleepy-1.png "Sleepy UI"){: style="display: block; margin: auto; margin-top: 10px; width: 400px; padding: 5px; border: thin solid lightgray; border-radius: 5px;"}
 
