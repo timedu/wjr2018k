@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 3.3: Elokuvahaku"
+title: "Tehtävä 3.3: Elokuvahaku (1p)"
 exercise_template_name: W3E03.ElokuvaHaku
 exercise_discussion_id: 98573
 exercise_upload_id: 381427

@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 3.2: Elokuvat"
+title: "Tehtävä 3.2: Elokuvat (1p)"
 exercise_template_name: W3E02.Elokuvat
 exercise_discussion_id: 98572
 exercise_upload_id: 381426

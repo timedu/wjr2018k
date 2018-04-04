@@ -3,6 +3,7 @@ layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
 modified_at: 3.4.2018
+julkaisu: 5.4.2018
 ---
 
 [AngularJS](https://docs.angularjs.org/guide/introduction)
@@ -26,7 +27,6 @@ Edellä oleva lainaus on poimittu [kurssilukemiston]({{site.baseurl}}/weso/) luv
 ([Sovelluksen rakenteen hallinta: AngularJS]({{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS)) alusta. Myös kaikki tämän osan tehtävät perustuvat kurssilukemistoon.
 
 {% endcomment %}
-
 
 ### Tehtävät
 

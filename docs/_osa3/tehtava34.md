@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 3.4: Rekisteröityminen"
+title: "Tehtävä 3.4: Rekisteröityminen (2p)"
 exercise_template_name: W3E04.Rekisteroityminen
 exercise_discussion_id: 98574
 exercise_upload_id: 381428

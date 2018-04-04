@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 3.6: Pikakirjoitus"
+title: "Tehtävä 3.6: Pikakirjoitus (2p)"
 exercise_template_name: W3E06.Pikakirjoitus
 exercise_discussion_id: 98576
 exercise_upload_id: 381430

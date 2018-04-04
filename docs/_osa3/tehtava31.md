@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 3.1: James Bond"
+title: "Tehtävä 3.1: James Bond (1p)"
 exercise_template_name: W3E01.JamesBond
 exercise_discussion_id: 98571
 exercise_upload_id: 381425

@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 3.5: Laskin"
+title: "Tehtävä 3.5: Laskin (1p)"
 exercise_template_name: W3E05.Laskin
 exercise_discussion_id: 98575
 exercise_upload_id: 381429
