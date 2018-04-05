@@ -30,8 +30,7 @@ Edellä oleva lainaus on poimittu [kurssilukemiston]({{site.baseurl}}/weso/) luv
 
 ### Tehtävät
 
-Tehtävät on poimittu lähteen[^lisenssi] luvusta [12 Sovelluksen rakenteen hallinta: AngularJS](http://web-selainohjelmointi.github.io/#12-Sovelluksen-rakenteen-hallinta:-AngularJS).
-
+Tämän osan kahdeksan tehtävää ovat modifikaatiota lähteen[^lisenssi] luvun [12 Sovelluksen rakenteen hallinta: AngularJS](http://web-selainohjelmointi.github.io/#12-Sovelluksen-rakenteen-hallinta:-AngularJS) tehtävistä 27-34.
 
 [^lisenssi]: <small>[Lähdemateriaali](http://web-selainohjelmointi.github.io) on lisensoitu Creative Commons BY-NC-SA-lisenssillä, joten sitä voi käyttää ja levittää  vapaasti, kunhan alkuperäisten tekijöiden nimiä ei poisteta. Jos materiaaliin tekee muutoksia ja levittää muunneltua versiota, se täytyy lisensoida samanlaisella vapaalla lisenssillä. Materiaalien käyttö kaupalliseen tarkoitukseen on ilman erillistä lupaa kielletty. Lähteenä olevan materiaalin ovat laatineet Kalle Ilves ja Arto Vihavainen.</small>
 
@@ -39,6 +38,21 @@ Tehtävät on poimittu lähteen[^lisenssi] luvusta [12 Sovelluksen rakenteen hal
 
 {% comment %}
 
+- datan siirtyminen näkymästä malliin ja päinvastoin
+- taulukkodatan esittäminen näkymässä
+- mallin datan suodatus
+- syötteen kelpoistaminen
+
+{% endcomment %}
+
+[Tehtävässä 3.1](tehtava31) täydennetään pohjassa olevaa *templatea* siten, että data siirtyy *näkymässä* olevista tekstikentistä *malliin* ja sieltä näkymässä olevan elementin sisällöksi. Tämä voidaan toteuttaa ilman JavaScript-koodin kirjoittamista. Tehtävässä tosin laaditaan myös yksinkertainen *kontrolleri*, joka suorittaa *mallin* datan asettamisen alkuarvoonsa. [Tehtävässä 3.2](tehtava32) laaditaan *template*, joka muodostaa näkymän taulukkomuotoisen datan perusteella. Lähtökohtana on html-merkkaus, jota täydennetään *AngularJS*-direktiiveillä, ja jonka vakiosisältö korvataan viittauksilla mallin dataan.
+
+[Tehtävässä 3.3](tehtava33) muodostetaan *template*, joka suodattaa *mallin* datajoukkoa siten, että ainoastaan tiettyjen tekstikenttien määräämä osa datasta esitetään *näkymässä*. Ominaisuuden toteuttaminen ei edellytä JavaScript-koodin laatimista. [Tehtävässä 3.4](tehtava34) toteutetaan *template*, johon perustuva *näkymä* kelpoistaa käyttäjän lomakkeelle syöttämiä tietoja. Kelpoistuksessa hyödynnetään myös erästä AngularJS:n laajennusta. Perusmuodossaan tämäkin voidaan toteuttaa ilman JavaScriptia, mutta tässä laaditaan ohjelmointia edellyttävä eräs kelpoistusta tukeva direktiivi, joka tosin on pohjassa jo melkein valmiina.
+
+[Tehtävän 3.5](tehtava35) painopiste on *kontrollerissa*, johon laaditaan joukko *näkymästä* kutsuttavia metodeja. Myös [Tehtävän 3.6](tehtava36) keskittyy *kontrolleriin*, johon rakennetaan *mallin* datan muutoksia seuraavia tarkkailijoita. Tehtävässä tulee esiin myös, miten kontrolleri voi toimintansa tueksi ottaa käyttöön erillisiä palveluja. [Tehtävän 3.7](tehtava37) muistilista-sovellus on muihin tehtäviin verrattuna jonkin verran laajempi. Tehtävän kokoaa yhteen jo edellisissä  tehtävissä sovellettuja *AngularJS*-ominaisuuksia. [Tehtävän 3.8](tehtava38) rakennetaan *direktiivi*, jonka asettaminen *templateen* tuo näkymään liukusäädin-tyyppisen käyttöliittymäelementin.  
+
+
+{% comment %}
 
 Viimeinen tehtävistä ([4.7](tehtava47)) on muita jonkin verran laajempi muistuttaen ominaisuuksiltaan kurssin edellisten osien tehtävissä eri periaattein toteutettua Puhelinmuistio-sovellusta. Muut tehtävät keskittyvät *AngulaJS*-sovelluskehyksen yksittäisten ominaisuuksien esittelyyn.
 
@@ -51,6 +65,7 @@ Viimeinen tehtävistä ([4.7](tehtava47)) on muita jonkin verran laajempi muistu
 [Tehtävän 4.5](tehtava45) painopiste on kontrollerissa, johon laaditaan joukko näkymästä kutsuttavia metodeja. Myös [Tehtävän 4.6](tehtava46) keskittyy kontrolleriin, johon rakennetaan mallin datan muutoksia seuraavia tarkkailijoita. Tehtävässä tulee esiin myös, miten kontrolleri voi toimintansa tueksi ottaa käyttöön erillisiä palveluja.
 
 {% endcomment %}
+
 
 
 <br/>

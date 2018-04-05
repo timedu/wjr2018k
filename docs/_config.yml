@@ -40,14 +40,14 @@ collections:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 3
-    otsikko: "Angular I"
+    otsikko: "AngularJS I"
     julkaisu: 3.4.2018
 
   osa4:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 4
-    otsikko: "Angular II"
+    otsikko: "AngularJS II"
     julkaisu: 17.4.2018
 
   osa5:
