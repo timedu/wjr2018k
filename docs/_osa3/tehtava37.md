@@ -4,7 +4,7 @@ title: "Tehtävä 3.7: Muistilista (4p)"
 exercise_template_name: W3E07.Muistilista
 exercise_discussion_id: 98577
 exercise_upload_id: 381431
-modified_at: 4.4.2018
+modified_at: 5.4.2018
 ---
 
 
@@ -58,3 +58,47 @@ Tehtävä on lähes sama kuin lähteen [Tehtävä 33][tehtäva-33]. Tehtäväss�
 
 [tehtäva-33]: http://web-selainohjelmointi.github.io/#vk-4-t33
 [luku-12]: http://web-selainohjelmointi.github.io/#12-Sovelluksen-rakenteen-hallinta:-AngularJS
+
+Tehtäväpohjassa olevat testit (`TemplateSpec.js` ja `ControllerSpec.js`) testaavat tässä laadittavia moduulela `TodoTemplate.html` ja `TodoController.js` toisistaan erillisinä seuraavasti:
+
+~~~
+TodoTemplate
+    template
+        sisältää 4 div-elementtiä (huomioiden id-/class-attribuutit)
+    view
+        kutsuu changePriority-funktiota (parametreilla: todo, $event), kun prioriteettia muutetaan
+        esittää muistilistan tehtävät
+        kutsuu removeAll-funktiota, kun "Poista kaikki" -painiketta klikataan
+        kutsuu setAllDone-funktiota, kun "Merkkaa kaikki tehdyksi" -painiketta klikataan
+        kutsuu remove-funktiota (parametrilla: todo), kun "Poista"-painiketta klikataan
+        kutsuu changePriority-funktiota, kun prioriteettia muutetaan
+        esittää valmiit tehtävät tsekattuina ja yliviivattuina
+        esittää tehtävät prioriteetin mukaisessa järjestyksessä
+        huomioi yksikön ja monikon valmiiden ja keskeneräisten tehtävien lukumäärien esityksessä
+        kutsuu add-funktiota, kun "Lisää tehtävä" -painiketta klikataan
+        välittää uuden tehtävän mallille
+        esittää valmiiden ja keskeneräisten tehtävävien lukumäärän
+
+TodoController
+    add
+        lisää uuden keskeneräisen tehtävän prioriteetilla 1
+    setAllDone
+        asettaa kaikki tehtävät tehdyksi
+    todosDone
+        kasvattaa arvoa yhdellä, kun luetteloon lisätään uusi valmis tehtävä
+        asettaa alkuaineistoon perustuvan arvon
+    todosRemaining
+        kasvattaa arvoa yhdellä, kun luetteloon lisätään uusi keskeneräinen tehtävä
+        asettaa alkuaineistoon perustuvan arvon
+    remove
+        poistaa luettelosta parametrina annetun tehtävän (todo)
+    removeAll
+        ei poista tehtäviä, jos varmistuskysymykseen (confirm) vastataan kielteisesti
+        poistaa tehtävät, jos varmistuskysymykseen (confirm) vastataan myönteisesti
+    toggleDone
+        muuttaa valmiin tehtävän keskeneräiseksi
+        muuttaa keskeneräisen tehtävän valmiiksi
+    changePriority
+        asettaa tehtävälle uuden prioriteetin (numeerisena)
+        ei muuta prioriteettia, jos uusi arvo ei ole kelvollinen
+~~~
