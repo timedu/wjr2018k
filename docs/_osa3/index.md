@@ -1,32 +1,41 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-kesken: 1
-modified_at: 3.4.2018
-julkaisu: 5.4.2018
+modified_at: 6.4.2018
 ---
 
-[AngularJS](https://docs.angularjs.org/guide/introduction)
+Vuonna 2012[^release] julkaistu [AngularJS][angularjs] on edelleenkin [suosituimpien][popularity] selainpään sovelluskehysten joukossa. Se on ominaisuuksiltaan [edellisessä osassa](../osa2) tarkasteltua *Backbone:a* huomattavasti laajempi. *AngularJS*-pohjaisten sovellusten keskeisiä rakenneosia ovat *mallit*, *näkymät* ja *kontrollerit*:
 
-{% comment %}
+[angularjs]:https://docs.angularjs.org/guide/introduction
+[popularity]: https://hotframeworks.com/languages/javascript
 
-> [Angular](https://angular.io) is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop.
+[^release]: <small>[Version 1.0.0](https://github.com/angular/angular.js/blob/master/CHANGELOG.md#100-temporal-domination-2012-06-13) julkaisuvuosi; tätä aikaisempia julkaisuja vuodesta 2010 lähtien</small>
 
-
-> Olemme tähän mennessä onnistuneesti pystyneet esittämään sovelluksemme dataa käyttöliittymässä ja jopa välittämään käyttöliittymästä tehtyjä muutoksia sovelluslogiikkaan.
-[Mustache](https://mustache.github.io)
- tekee datan esittämisestä näkymässä melko helppoa, mutta kuten olet ehkä huomannut, datan muokkaaminen näkymän kautta ei ole aivan niin helppoa. Ongelmat ilmenevät etenkin sovelluksen kasvaessa, jolloin sen rakenteesta tulee aina vain sekavampi. Rakennetta selkeyttää huomattavasti käyttöliittymän erottaminen sovelluksen datasta, johon jo mainittu MVC-arkkitehtuuri pyrkiikin. Selkeän MVC-arkkitehtuurin aikaansaaminen on kuitenkin yllättävän vaikeaa, jos työkalut eivät ole oikeat.
 >
-> Apuun tulee suuren suosion saavuttanut [AngularJS](https://angularjs.org)
-MVW-[sovelluskehys](https://fi.wikipedia.org/wiki/Ohjelmistokehys).
-Edellisessä lauseessa ei ole kirjoitusvirhettä, Angularia ei voi rajata pelkäksi MVC-sovelluskehykseksi (vaikkakin niin usein tehdään), vaan tarkempi termi onkin "Model View Whatever". Se siis esittää mallia näkymässä ja välittää näkymässä tehtyjä muutoksia takaisin malliin. Mitä mallin ja näkymän rajapinnassa tapahtuu, on ohjelmoijan itsensä päätettävissä.
->
-> Mikä Angularissa on hienoa, on se, että se tekee luonteeltaan staattisesta HTML:stä dynaamista, jolloin malli on sekä helppo esittää näkymässä, että helppo muokata näkymän kautta. Yksinkertaisia sovelluksia voidaan saada aikaan kirjoittamatta riviäkään JavaScriptiä.
+Model - the data shown to the user in the view and with which the user interacts  
+View - what the user sees (the DOM)  
+Controller - the business logic behind views  
+<cite><small>
+[[AngularJS Developer Guide](https://docs.angularjs.org/guide/concepts)]
+</small></cite>  
 
-Edellä oleva lainaus on poimittu [kurssilukemiston]({{site.baseurl}}/weso/) luvun 12
-([Sovelluksen rakenteen hallinta: AngularJS]({{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS)) alusta. Myös kaikki tämän osan tehtävät perustuvat kurssilukemistoon.
+*Näkymän* perustana on *template*, joka muodostuu html-merkkauksesta sitä täydenttävistä *direktiiveistä*. AngularJS-sovelluksissa data välittyy *mallista* *näkymään* ja päinvastoin ilman, että se edellyttää JavaScript-koodin laatimista:
 
-{% endcomment %}
+![Data_Binding](https://docs.angularjs.org/img/Two_Way_Data_Binding.png "Data_Binding"){: style="display: block; margin: auto; margin-top: 10px; width: 350px; padding: 5px;"}
+<cite><small>
+[[AngularJS Developer Guide](https://docs.angularjs.org/guide/databinding)]
+</small></cite>  
+
+*AngularJS*:n vuonna 2016 julkaistu seuraaja kulkee nimellä [Angular](https://angular.io). Tiettävästi kehittäjien keskuudessa [kritiikkiä][critic] on herättänyt se, että *Angular* ei ole taaksepäin yhteensopiva jonkinlaisen de-facto aseman saavuttaneen *AngularJS*:n kanssa[^angularjs-vs-angular]. *AngularJS:n* seuraava versio (1.7.0) [julkaistaan][next-release] kuluvan vuoden kesäkuun lopussa.
+
+[critic]: https://jaxenter.com/angular-2-0-announcement-backfires-112127.html
+[next-release]: https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c
+
+[^angularjs-vs-angular]: <small>[Comparison Between: Angular 1 Vs Angular 2 Vs Angular 4][versus-3], [Angular vs Angular 2][versus-1], [Angularjs Vs Angular2 | What’s The Difference?][versus-2]</small>
+
+[versus-1]: https://stackoverflow.com/questions/34114593/angular-vs-angular-2
+[versus-2]: https://www.dunebook.com/angularjs-vs-angular2-whats-the-difference/
+[versus-3]: https://www.angularminds.com/blog/article/comparison-difference-between-angular1-vs-angular2-vs-angular4.html
 
 ### Tehtävät
 
@@ -36,35 +45,21 @@ Tämän osan kahdeksan tehtävää ovat modifikaatiota lähteen[^lisenssi] luvun
 
 {% include exercises_list.md %}
 
-{% comment %}
-
-- datan siirtyminen näkymästä malliin ja päinvastoin
-- taulukkodatan esittäminen näkymässä
-- mallin datan suodatus
-- syötteen kelpoistaminen
-
-{% endcomment %}
-
 [Tehtävässä 3.1](tehtava31) täydennetään pohjassa olevaa *templatea* siten, että data siirtyy *näkymässä* olevista tekstikentistä *malliin* ja sieltä näkymässä olevan elementin sisällöksi. Tämä voidaan toteuttaa ilman JavaScript-koodin kirjoittamista. Tehtävässä tosin laaditaan myös yksinkertainen *kontrolleri*, joka suorittaa *mallin* datan asettamisen alkuarvoonsa. [Tehtävässä 3.2](tehtava32) laaditaan *template*, joka muodostaa näkymän taulukkomuotoisen datan perusteella. Lähtökohtana on html-merkkaus, jota täydennetään *AngularJS*-direktiiveillä, ja jonka vakiosisältö korvataan viittauksilla mallin dataan.
 
 [Tehtävässä 3.3](tehtava33) muodostetaan *template*, joka suodattaa *mallin* datajoukkoa siten, että ainoastaan tiettyjen tekstikenttien määräämä osa datasta esitetään *näkymässä*. Ominaisuuden toteuttaminen ei edellytä JavaScript-koodin laatimista. [Tehtävässä 3.4](tehtava34) toteutetaan *template*, johon perustuva *näkymä* kelpoistaa käyttäjän lomakkeelle syöttämiä tietoja. Kelpoistuksessa hyödynnetään myös erästä AngularJS:n laajennusta. Perusmuodossaan tämäkin voidaan toteuttaa ilman JavaScriptia, mutta tässä laaditaan ohjelmointia edellyttävä eräs kelpoistusta tukeva direktiivi, joka tosin on pohjassa jo melkein valmiina.
 
 [Tehtävän 3.5](tehtava35) painopiste on *kontrollerissa*, johon laaditaan joukko *näkymästä* kutsuttavia metodeja. Myös [Tehtävän 3.6](tehtava36) keskittyy *kontrolleriin*, johon rakennetaan *mallin* datan muutoksia seuraavia tarkkailijoita. Tehtävässä tulee esiin myös, miten kontrolleri voi toimintansa tueksi ottaa käyttöön erillisiä palveluja. [Tehtävän 3.7](tehtava37) muistilista-sovellus on muihin tehtäviin verrattuna jonkin verran laajempi. Tehtävän kokoaa yhteen jo edellisissä  tehtävissä sovellettuja *AngularJS*-ominaisuuksia. [Tehtävän 3.8](tehtava38) rakennetaan *direktiivi*, jonka asettaminen *templateen* tuo näkymään liukusäädin-tyyppisen käyttöliittymäelementin.  
 
+### Lisätietoja
 
-{% comment %}
+[AngularJS Developer Guide](https://docs.angularjs.org/guide)  
+[AngularJS Tutorial](https://docs.angularjs.org/tutorial)   
+[General Learning Resources](https://docs.angularjs.org/guide/external-resources#general-learning-resources)  
 
-Viimeinen tehtävistä ([4.7](tehtava47)) on muita jonkin verran laajempi muistuttaen ominaisuuksiltaan kurssin edellisten osien tehtävissä eri periaattein toteutettua Puhelinmuistio-sovellusta. Muut tehtävät keskittyvät *AngulaJS*-sovelluskehyksen yksittäisten ominaisuuksien esittelyyn.
 
-[Tehtävässä 4.1](tehtava41) voidaan todeta, miten *AngularJS* hoitaa datan siirtymisen *näkymästä* *malliin* ja päinvastoin ilman JavaScript-koodin kirjoittamista. Tehtävässä tosin laaditaan myös yksinkertainen *kontrolleri*, joka suorittaa *mallin* datan asettamisen alkuarvoonsa.
 
-[Tehtävä 4.2](tehtava42) esittelee *AngularJS* -näkymien muodostamisessa käytettävää template -kieltä, joka syntaksiltaan muistuttaan *Mustachea*. Angularia käytettäessä templatet laaditaan osaksi merkkausta siten, että merkkaukseen sisällytetään Angularin ymmärtämiä ns. direktiivejä, jotka voivat esiintyä lähdekoodissa html -elementtien attribuutteina tai omina elementteinään.
 
-[Tehtävässä 4.3](tehtava43) tulee esiin, miten *mallin* datajoukkoa voidaan suodattaa *näkymässä* ilman JavaScript-koodaamista. [Tehtävässä 4.4](tehtava44) kelpoistetaan käyttäjän lomakkeelle syöttämät tiedot. Perusmuodossaan tämäkin voidaan toteuttaa ilman JavaScriptia. Tehtävässä hyödynnetään kelpoistuksessa myös erästä Angularin laajennusta sekä laaditaan oma kelpoistusta tukeva direktiivi. Viimeksi mainittu edellyttää JavaScript -koodia, mutta se on pohjassa jo melkein valmiina.
-
-[Tehtävän 4.5](tehtava45) painopiste on kontrollerissa, johon laaditaan joukko näkymästä kutsuttavia metodeja. Myös [Tehtävän 4.6](tehtava46) keskittyy kontrolleriin, johon rakennetaan mallin datan muutoksia seuraavia tarkkailijoita. Tehtävässä tulee esiin myös, miten kontrolleri voi toimintansa tueksi ottaa käyttöön erillisiä palveluja.
-
-{% endcomment %}
 
 
 
