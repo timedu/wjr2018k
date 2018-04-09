@@ -33,7 +33,7 @@ collections:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 2
-    otsikko: "Backbone"
+    otsikko: "BackboneJS"
     julkaisu: 20.3.2018
 
   osa3:
@@ -68,5 +68,5 @@ collections:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 7
-    otsikko: "tbd"
+    otsikko: "React III"
     julkaisu: 15.5.2018
