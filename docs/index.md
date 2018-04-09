@@ -1,6 +1,6 @@
 ---
 layout: site_index
-modified_at: 5.3.2018
+modified_at: 9.4.2018
 ---
 
 
@@ -13,10 +13,10 @@ sivusto rakentuu kurssitoteutuksen edetessä
 Opinto-opas esittää *Web-järjestelmät* -opintojakson oppimistavoitteista seuraavaa:
 > Opintojakson suoritettuaan opiskelija kykenee jäsentämään web-selaimessa toimivan sovelluksen hallittavaksi olioista ja moduuleista muodostuvaksi kokonaisuudeksi. Opiskelija osaa myös soveltaa selainohjelmoinnissa yleisesti käytettyjä ohjelmakirjastoja sekä hyödyntää uusia web-selaimien tarjoamia ohjelmointirajapintoja. Opiskelija tuntee selain- ja palvelinsovelluksen välisen kommunikoinnin periaatteet sekä tietää, miten selainpäässä toimiva web-sovellus käsittelee tietokantaa.
 
-Tämä kurssitoteutus rakentuu edeltäjänsä  ([Web-selainohjelmointi](https://timedu.github.io/wso/)) perustalta siten, että kurssin fokus säilyy selainpäässä. Pääjäsennys muodostuu sovellusten strukturointia tukevien kirjastoratkaisujen pohjalta: [Backbone][Backbone], [Angular][Angular] ja [React][React]. Viimeksi mainittu [on ilmeisesti][hy-kirjastoista] tällä hetkellä suosituin. Muutama vuosi sitten *Angular* oli johtavassa asemassa. *Backbone* taas edustaa hieman "vanhempaa"[^backbone-initial] näkemystä sovellusten jäsentämisestä. Tiettävästi jonkinlaisessa nousukiidossa on [Vue][Vue], johon ei kuitenkaan tutustuta tämän kurssitoteutuksen puitteissa.
+Tämä kurssitoteutus rakentuu edeltäjänsä  ([Web-selainohjelmointi](https://timedu.github.io/wso/)) perustalta siten, että kurssin fokus säilyy selainpäässä. Pääjäsennys muodostuu sovellusten strukturointia tukevien kirjastoratkaisujen pohjalta: [Backbone.js][BackboneJS], [AngularJS][AngularJS] ja [React][React]. Viimeksi mainittu [on ilmeisesti][hy-kirjastoista] tällä hetkellä suosituin. Muutama vuosi sitten *AngularJS* oli johtavassa asemassa. *Backbone* taas edustaa hieman "vanhempaa"[^backbone-initial] näkemystä sovellusten jäsentämisestä. Tiettävästi jonkinlaisessa nousukiidossa on [Vue.js][Vue], johon ei kuitenkaan tutustuta tämän kurssitoteutuksen puitteissa.
 
-[Backbone]: http://backbonejs.org
-[Angular]: https://angular.io
+[BackboneJS]: http://backbonejs.org
+[AngularJS]: https://angularjs.org
 [React]: https://reactjs.org
 [Vue]: https://vuejs.org
 
