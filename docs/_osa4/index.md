@@ -1,15 +1,17 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
+modified_at: 16.4.2018
 kesken: 1
-modified_at: 3.4.2018
+julkaisu: 18.4.2018
 ---
 
 [AngularJS](https://docs.angularjs.org/guide/introduction)
 
+
 {% comment %}
 
-Kurssin [edellisessä osassa](../osa4) tutustuttiin jo [AngularJS][AngularJS] -sovelluskehykseen. Todettiin mm., että Agularissa tiedot siirtyvät ilman ohjelmointia mallin ja näkymän välillä kontrollerijohtaisella näkyvyysalueella, johon voi sisällyttää myös näkymästä kutsuttavissa olevaa toiminnallisuutta. Mallin datalle asetettiin myös tarkkailijoita, jotka reagoivat mallin datan muutoksiin.
+Kurssin [edellisessä osassa](../osa3) tutustuttiin jo [AngularJS][AngularJS] -sovelluskehykseen. Todettiin mm., että Agularissa tiedot siirtyvät ilman ohjelmointia mallin ja näkymän välillä kontrollerijohtaisella näkyvyysalueella, johon voi sisällyttää myös näkymästä kutsuttavissa olevaa toiminnallisuutta. Mallin datalle asetettiin myös tarkkailijoita, jotka reagoivat mallin datan muutoksiin.
 
 [AngularJS]: https://angularjs.org
 
@@ -26,17 +28,26 @@ Tämä osa jatkaa vielä Angular-teemalla. Edellisen osan tehtävissä hyödynne
 [17. Suurempi Angular-sovellus: Elokuvakirjasto]({{site.baseurl}}/weso/#17-Suurempi-Angular-sovellus:-Elokuvakirjasto).   
 
 
-#### Tehtävät
+{% endcomment %}
+
+
+### Tehtävät
+
+{% comment %}
+
 
 Tämän osan tehtävissä palataan jo edellisissä osissa esillä olleeseen puhelinmuistio -sovellukseen, jonka ominaisuuksia kehitetään nyt AngularJS:n avulla. Osa sisältää kuusi tehtävää:
+
+{% endcomment %}
 
 
 {% include exercises_list.md %}
 
+{% comment %}
 
-[Tehtävä 5.1](tehtava51) kertaa jo [kurssin edellisessä osassa](../osa4) esiin tulleita asioita. Tehtävässä muokataan aikaisemmin toteutettu sovellus siten, että sen näkymä ja kontrolleri on toteutettu Angularilla. [Tehtävässä 5.2](tehtava52) sovelluksen dataa ylläpitävästä Muistio-moduulista laaditaan erillinen palvelu, joka injektoidaan kontrollerin käyttöön. [Tehtävä 5.3](tehtava53) esittelee, miten direktiivin avulla voidaan määritellä käyttöliittymässä olevan elementin ominaisuuksia. Tehtävässä laadittava, sovelluksen painikkeisiin liitettävä, direktiivi määrää panikkeen otsikon ja samalla klikkaukseen liityvän käsittelijän.
+[Tehtävä 4.1](tehtava41) kertaa jo [kurssin edellisessä osassa](../osa3) esiin tulleita asioita. Tehtävässä muokataan aikaisemmin toteutettu sovellus siten, että sen näkymä ja kontrolleri on toteutettu Angularilla. [Tehtävässä 4.2](tehtava42) sovelluksen dataa ylläpitävästä Muistio-moduulista laaditaan erillinen palvelu, joka injektoidaan kontrollerin käyttöön. [Tehtävä 4.3](tehtava43) esittelee, miten direktiivin avulla voidaan määritellä käyttöliittymässä olevan elementin ominaisuuksia. Tehtävässä laadittava, sovelluksen painikkeisiin liitettävä, direktiivi määrää panikkeen otsikon ja samalla klikkaukseen liityvän käsittelijän.
 
-[Tehtävässä 5.4](tehtava54) sovellus jaetaan kolmeen erilliseen näkymään ja määritellään erillisen reitityskonfiguraation avulla osoitteet, joissa kukin näkymä tulee esiin. [Tehtävässä 5.6](tehtava56) injektoidaan sovellukseen palvelu, jonka kautta voidaan käyttää verkossa toimivaa [Firebase][Firebase] -tietokantaa. Sovelluksen data tallennataan tässä palvelun kautta tietokantaan. Sovellukseen liitetään samalla myös tunnistautuminen. [Tehtävä 5.5](tehtava55) on tehtävää 5.6 valmisteleva tehtävä. Tehtävässä 5.5 kytketään sovellus Firebase -tietokantaan ja haetaan sieltä näkymään tietoa.
+[Tehtävässä 4.4](tehtava44) sovellus jaetaan kolmeen erilliseen näkymään ja määritellään erillisen reitityskonfiguraation avulla osoitteet, joissa kukin näkymä tulee esiin. [Tehtävässä 4.6](tehtava46) injektoidaan sovellukseen palvelu, jonka kautta voidaan käyttää verkossa toimivaa [Firebase][Firebase] -tietokantaa. Sovelluksen data tallennataan tässä palvelun kautta tietokantaan. Sovellukseen liitetään samalla myös tunnistautuminen. [Tehtävä 4.5](tehtava45) on tehtävää 4.6 valmisteleva tehtävä. Tehtävässä 4.5 kytketään sovellus Firebase -tietokantaan ja haetaan sieltä näkymään tietoa.
 
 [Firebase]: https://firebase.google.com
 

@@ -2,15 +2,21 @@
 layout: exercise_page
 title: "Tehtävä 4.3: Puhelinmuistio: Directive"
 exercise_template_name: # W4E03.PuhDirective
-exercise_discussion_id: #
-exercise_upload_id: #
-kesken:  1
+exercise_discussion_id: # 99282
+exercise_upload_id: # 382323
+modified_at: 16.4.2018
+kesken: 1
+julkaisu: 18.4.2018
 no_review: 1
 ---
 
+Puhelinmuistio: Directive
+
+{% comment %}
+
 Jatkokehitä *AngularJS*-pohjaista puhelinmuistio-sovellustasi siten, että painikkeiden omainaisuudet määrittelee erillinen *direktiivi*. Sovelluksen ulkoasu ja ulkoinen käyttäytyminen pysyy muuttumattomana.
 
-Tehtävissä [5.1](../tehtava51) ja [5.2](../tehtava52) näkymän (`template.html`) merkkaus on seuraavanlainen:
+Tehtävissä [4.1](../tehtava41) ja [4.2](../tehtava42) näkymän (`template.html`) merkkaus on seuraavanlainen:
 
 {% highlight html %}
 {% raw %}
@@ -140,3 +146,6 @@ AngularJS -direktiivejä käsitellään lyhyesti kurssilukemiston [kohdassa 12.6
 [angular.element]: https://docs.angularjs.org/api/ng/function/angular.element
 
 #### Alaviitteet
+
+
+{% endcomment %}

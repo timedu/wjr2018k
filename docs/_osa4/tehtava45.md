@@ -2,14 +2,19 @@
 layout: exercise_page
 title: "Tehtävä 4.5: Hello Firebase"
 exercise_template_name: # W4E05.HelloFirebase
-exercise_discussion_id: #
-exercise_upload_id: #
-kesken:  1
+exercise_discussion_id: # 99284
+exercise_upload_id: # 382325
+modified_at: 16.4.2018
+kesken: 1
+julkaisu: 18.4.2018
 no_review: 1
 ---
 
+Hello Firebase
 
-Tämä on [seuraavaa tehtävää](../tehtava56) valmisteleva tehtävä, joka perustuu kurssilukemiston [Tehtävään 35]({{site.baseurl}}/weso/#vk-5-t35). Seuraavassa tehtäväkuvauksen lähtökohtana on lähteestä poimittu lainaus, jota on tässä hivenen muokattu.
+{% comment %}
+
+Tämä on [seuraavaa tehtävää](../tehtava46) valmisteleva tehtävä, joka perustuu kurssilukemiston [Tehtävään 35]({{site.baseurl}}/weso/#vk-5-t35). Seuraavassa tehtäväkuvauksen lähtökohtana on lähteestä poimittu lainaus, jota on tässä hivenen muokattu.
 
 > Rekisteröidy [Firebaseen][firebase] ja lisää sinne dataa, jonka sisältö on `{ message: 'Hello, World!' }` (`message`-kenttä, jonka arvo on `Hello, World!`).
 >
@@ -94,3 +99,5 @@ Firebase-rajapintaa  käsitellään  kurssilukemiston[^3] luvuissa [13][weso-13]
 
 
 #### Alaviitteet
+
+{% endcomment %}

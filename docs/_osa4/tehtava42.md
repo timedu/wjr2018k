@@ -2,12 +2,17 @@
 layout: exercise_page
 title: "Tehtävä 4.2: Puhelinmuistio: Service"
 exercise_template_name: # W4E02.PuhService
-exercise_discussion_id: #
-exercise_upload_id: #
-kesken:  1
+exercise_discussion_id: # 99281
+exercise_upload_id: # 382322
+modified_at: 16.4.2018
+kesken: 1
+julkaisu: 18.4.2018
 no_review: 1
 ---
 
+Puhelinmuistio: Service
+
+{% comment %}
 
 Laadi [edellisen tehtävän](../tehtava41) kaltainen *AngularJS*-pohjainen toteutus puhelinmuistioista kuitenkin niin, että nimi- ja numerotietojen ylläpidon toteuttaa erillinen *Muistio*-palvelu.
 
@@ -67,3 +72,5 @@ AngularJS -palveluja käsitellään lyhyesti kurssilukemiston [kohdassa 13.2][we
 
 [weso-13.2]: {{site.baseurl}}/weso/#13.2-Palvelut-(services)
 [guide]: https://docs.angularjs.org/guide/services
+
+{% endcomment %}

@@ -2,23 +2,28 @@
 layout: exercise_page
 title: "Tehtävä 4.6: Puhelinmuistio: Firebase"
 exercise_template_name: # W4E06.PuhFirebase
-exercise_discussion_id: #
-exercise_upload_id: #
-kesken:  1
+exercise_discussion_id: # 99285
+exercise_upload_id: # 382326
+modified_at: 16.4.2018
+kesken: 1
+julkaisu: 18.4.2018
 no_review: 1
 ---
 
+Puhelinmuistio: Firebase
 
-Laadi puhelinmuistiosovellus, joka on ulkoiselta käyttäytymiseltään pääosin [tehtävän 5.4](../tehtava54) ratkaisun kaltainen. Laadittava sovellus kuitenkin tukeutuu tietojen talletuksen osalta [Firebase-tietokantaan][firebase-db]. Sovelluksen käyttö myös edellyttää käyttäjältään tunnistautumista, mikä toteteutetaan [Firebasen autentikointipalvelulla][firebase-auth].
+{% comment %}
+
+Laadi puhelinmuistiosovellus, joka on ulkoiselta käyttäytymiseltään pääosin [tehtävän 4.4](../tehtava44) ratkaisun kaltainen. Laadittava sovellus kuitenkin tukeutuu tietojen talletuksen osalta [Firebase-tietokantaan][firebase-db]. Sovelluksen käyttö myös edellyttää käyttäjältään tunnistautumista, mikä toteteutetaan [Firebasen autentikointipalvelulla][firebase-auth].
 
 [firebase-db]: https://firebase.google.com/docs/database/
 [firebase-auth]: https://firebase.google.com/docs/auth/
 
 ### Käyttöliittymä
 
-Sovelluksen ulkoasu ja reititys on pääosin kuten [tehtävässä 5.4](../tehtava54). Tunnistautumisvaatimus kuitenkin tuo näihin pieniä muutoksia.
+Sovelluksen ulkoasu ja reititys on pääosin kuten [tehtävässä 4.4](../tehtava44). Tunnistautumisvaatimus kuitenkin tuo näihin pieniä muutoksia.
 
-![ui-1](../img/w5e06-1.png "ui-1")
+![ui-1](../img/w4e06-1.png "ui-1"){: style="display: block; margin: auto; margin-top: 10px; width: 400px;"}
 
 <small>Kuva 1. Hae numeroita -sivu (ei kirjauduttu).</small>
 
@@ -28,13 +33,13 @@ Käyttäjä tunnistautuu klikkaamalla *Login* -painiketta. Jos tunnistautuminen 
 
 *Logout* -painikkeen klikkaus palauttaa näkymän Kuvassa 1 esitetyn kaltaiseksi.
 
-![ui-2](../img/w5e06-2.png "ui-2")
+![ui-2](../img/w4e06-2.png "ui-2"){: style="display: block; margin: auto; margin-top: 10px; width: 400px;"}
 
 <small>Kuva 2. Hae numeroita -sivu (kirjauduttu).</small>
 
 #### Reititys
 
-Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkeiden ja linkkien ohella myös suorilla osoitteilla (vrt. [Tehtävä 5.4](../tehtava54)). Jos kirjautumista ei ole tehty, on suoralla osoitteella pääsy ainoastaan sovelluksen juuriosoitteeseen (`/W5E06/#/` tai `/W5E06/`), joka tuo esiin *Hae numeroita* -näkymän. Yritys muuhun osoitteeseen (esim. `/W5E06/#/bart`, `/W5E06/#/bart/remove/111` tai `/W5E06/#/jotakin/muuta`) palauttaa käsittelyn juuriosoitteeseen.
+Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkeiden ja linkkien ohella myös suorilla osoitteilla (vrt. [Tehtävä 4.4](../tehtava44)). Jos kirjautumista ei ole tehty, on suoralla osoitteella pääsy ainoastaan sovelluksen juuriosoitteeseen (`/W4E06/#/` tai `/W4E06/`), joka tuo esiin *Hae numeroita* -näkymän. Yritys muuhun osoitteeseen (esim. `/W4E06/#/bart`, `/W4E06/#/bart/remove/111` tai `/W4E06/#/jotakin/muuta`) palauttaa käsittelyn juuriosoitteeseen.
 
 
 ### Tietokanta
@@ -142,7 +147,7 @@ Oletussäännöillä tietojen sekä lukeminen että kirjoittaminen edellyttää 
 
 <small>Listaus 4. Sovelluksen pääsivun *body* -elementin merkkaus.</small>
 
-Sovellukseen liittyy  seitsemän[^lisaksi-kirjastot] JavaScript -tiedostoa, joista kolme (`todo` -kansiossa olevat) palautetaan osana tehtävän ratkaisua. Suuri osa tarvittavasta koodista on tehtäväpohjassa tai kopioitavissa [tehtavän 5.4](../tehtava54) ratkaisusta (ks. [seuraava kohta](#ratkaisun-laatimisen-esimerkkivaiheistus)).
+Sovellukseen liittyy  seitsemän[^lisaksi-kirjastot] JavaScript -tiedostoa, joista kolme (`todo` -kansiossa olevat) palautetaan osana tehtävän ratkaisua. Suuri osa tarvittavasta koodista on tehtäväpohjassa tai kopioitavissa [tehtavän 4.4](../tehtava44) ratkaisusta (ks. [seuraava kohta](#ratkaisun-laatimisen-esimerkkivaiheistus)).
 
 [^lisaksi-kirjastot]: Verkon yli ladattavien kirjastojen lisäksi
 
@@ -181,12 +186,12 @@ Tämän jälkeen em. virheilmoitusta ei enää pitäsi tulla selaimen konsolille
 
 #### *Vaihe I*
 
-Askelten 2-5 toteuttamisen jälkeen sovelluksen pitäisi toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaisesti.
+Askelten 2-5 toteuttamisen jälkeen sovelluksen pitäisi toimia [tehtävän 4.4](../tehtava44) kuvauksen mukaisesti.
 
 
 #### 2. Näkymien reititys
 
-Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `config.js` sisältö tiedostoon `route.config.js` ja tee kopioimaasi koodiin seuraavat *Hae numeroita* -näkymää koskevat muutokset:
+Kopio [tehtävän 4.4](../tehtava44) ratkaisusta tiedoston `config.js` sisältö tiedostoon `route.config.js` ja tee kopioimaasi koodiin seuraavat *Hae numeroita* -näkymää koskevat muutokset:
 
 {% highlight javascript %}
 
@@ -201,31 +206,31 @@ Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `config.js` sisältö
 
 {% endhighlight %}
 
-Sovelluksen käynnistyessä *Hae numeroita* -näkymän pitäisi tulla nyt esiin. *Lisää numero* -näkymään pääsee kirjaamalla jotakin sivulla olevaan *Nimi* -kenttään ja klikkaamalla sitten *uusi numero* -linkkiä. Näkymiin pääsee myös suorilla osoitteilla, esim.  `/W5E06/#/` , `/W5E06/#/joku`, `/W5E06/#/joku/add` ja `W5E06/#/joku/remove/123`. *Lisää numero*- ja *Poistetaanko numero?* -näkymät eivät sisällä painikkeita.
+Sovelluksen käynnistyessä *Hae numeroita* -näkymän pitäisi tulla nyt esiin. *Lisää numero* -näkymään pääsee kirjaamalla jotakin sivulla olevaan *Nimi* -kenttään ja klikkaamalla sitten *uusi numero* -linkkiä. Näkymiin pääsee myös suorilla osoitteilla, esim.  `/W4E06/#/` , `/W4E06/#/joku`, `/W4E06/#/joku/add` ja `W4E06/#/joku/remove/123`. *Lisää numero*- ja *Poistetaanko numero?* -näkymät eivät sisällä painikkeita.
 
 #### 3. Ylläpito -näkymien painikkeet
 
-Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `directive.js` sisältö tiedostoon `button.directive.js`.
+Kopio [tehtävän 4.4](../tehtava44) ratkaisusta tiedoston `directive.js` sisältö tiedostoon `button.directive.js`.
 
  *Lisää numero*- näkymä sisältää nyt *Lisää*- ja *Peruuta* -painikkeet ja *Poistetaanko numero?* -näkymä sisältää *Poista*- ja *Peruuta* -painikkeet. Näkymissä olevien painikkeiden klikkaukset eivät vaihda esillä olevaa näkymää.
 
 #### 4. Ylläpito -näkymien painikkeiden aktivointi
 
-Kopio [tehtävän 5.4](../tehtava54) ratkaisun tiedostosta `controller.js` kontrollerien  sisältö tiedostoihin `add.remove.controller.js` (`AddController` ja `RemoveController`) ja `search.controller.js` (`SearchController`[^puh-controller]).
+Kopio [tehtävän 4.4](../tehtava44) ratkaisun tiedostosta `controller.js` kontrollerien  sisältö tiedostoihin `add.remove.controller.js` (`AddController` ja `RemoveController`) ja `search.controller.js` (`SearchController`[^puh-controller]).
 
-[^puh-controller]: Tehtävässä 5.4 vastinkontrolleri on nimeltään `PuhController`.
+[^puh-controller]: Tehtävässä 4.4 vastinkontrolleri on nimeltään `PuhController`.
 
  *Lisää numero*- ja *Poistetaanko numero?* -näkymissä olevien painikkeiden klikkauksen pitäisi nyt tuoda esiin *Hae numeroita*- näkymän.
 
 #### 5. Datan talletus sovellukseen
 
-Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `service.js` metodien sisältö tiedoston `firebase.db.service.js` vastimetodeihin. Lisää palveluun myös kopioitujen metodien viitaama muuttuja:
+Kopio [tehtävän 4.4](../tehtava44) ratkaisusta tiedoston `service.js` metodien sisältö tiedoston `firebase.db.service.js` vastimetodeihin. Lisää palveluun myös kopioitujen metodien viitaama muuttuja:
 
 {% highlight javascript %}
     var henkilot = {};
 {% endhighlight %}
 
-Sovelluksen pitäisi nyt toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaisesti.
+Sovelluksen pitäisi nyt toimia [tehtävän 4.4](../tehtava44) kuvauksen mukaisesti.
 
 #### *Vaihe II*
 
@@ -328,3 +333,5 @@ Datan muutos olioon hoituu taulukkonotaatiolla. Esim. uuden numeron lisääminen
 
 
 #### Alaviitteet
+
+{% endcomment %}
