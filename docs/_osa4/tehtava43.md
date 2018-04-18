@@ -1,18 +1,12 @@
 ---
 layout: exercise_page
 title: "Tehtävä 4.3: Puhelinmuistio: Directive (3p)"
-exercise_template_name: # W4E03.PuhDirective
-exercise_discussion_id: # 99282
-exercise_upload_id: # 382323
-modified_at: 16.4.2018
-kesken: 1
-julkaisu: 18.4.2018
-no_review: 1
+exercise_template_name: W4E03.PuhDirective
+exercise_discussion_id: 99282
+exercise_upload_id: 382323
+modified_at: 18.4.2018
 ---
 
-Puhelinmuistio: Directive
-
-{% comment %}
 
 Jatkokehitä *AngularJS*-pohjaista puhelinmuistio-sovellustasi siten, että painikkeiden omainaisuudet määrittelee erillinen *direktiivi*. Sovelluksen ulkoasu ja ulkoinen käyttäytyminen pysyy muuttumattomana.
 
@@ -51,48 +45,46 @@ Tämän tehtävän pohjakoodissa vastaava tiedosto on seuraavanlainen:
 {% highlight html %}
 {% raw %}
 
-  <div ng-controller="PuhController">
+<div ng-controller="PuhController">
 
     <div id="lomake">
         ...
-        <button wso-btn="add"></button>
+        <button wjr-btn="add"></button>
     </div>
 
-    <div id="luettelo">  
-        ...              
+    <div id="luettelo">
+        ...             
             <li ng-repeat="numero in numerot">
                 {{numero}}
-                <button wso-btn="remove"
-                        data-nimi="{{nimi}}"
-                        data-numero="{{numero}}">                            
+                <button wjr-btn="remove" 
+                        otsikko="X"
+                        nimi="{{nimi}}" 
+                        numero="{{numero}}">                            
                 </button>
             </li>
-        </ul>
+        </ul>                
     </div>
-
-  </div>
+        
+</div>
 
 {% endraw %}
 {% endhighlight %}
 
-Painikkeilla ei ole `ng-click`-direktiiviä eikä sisältöä. Näiden sijaan painikkeilla on tässä tehtävässä määriteltävä `wso-btn`-direktiivi. Poisto-painikkeella on myös attribuutit `data-nimi` ja `data-numero`, joiden arvona on numeron poistossa tarvittavat tiedot. Direktiivi laaditaan pohjassa olevaan runkoon, `directive.js`:
+Painikkeilla ei ole `ng-click`-direktiiviä eikä sisältöä. Näiden sijaan painikkeilla on tässä tehtävässä määriteltävä `wjr-btn`-direktiivi. Poisto-painikkeella on myös attribuutit `otsikko`, `nimi` ja `numero`, joista kahden viimeisen arvona on numeron poistossa tarvittavat tiedot. Direktiivi laaditaan pohjassa olevaan runkoon, `wjr-btn.js`:
 
 {% highlight javascript %}
 
-PuhApp.directive('wsoBtn', function (WSO_BTN) {
+PuhApp.directive('wjrBtn', function () {
 
-    return {        
-        // ...                
-    };
 });
 
 {% endhighlight %}
 
 Direktiivi otsikoi painonapin sekä asettaa sille `click`-tapahtuman käsittelijän.
 
-Painikkeiden otsikot määrittelee `WSO_BTN`-olio, jolle `index.html` asettaa arvon. Esim. jos painikkeella on `wso-btn`-direktiivi ja sitä vastaavan attribuurin arvona on `add`, painikkeelle haetaan avaimella `add` otsikkoa oliosta `WSO_BTN`. Jos otsikkotekstiä ei löydy, otsikoksi asetetaan `add` so. `wso-btn`-attribuutin arvo.
+Painikkeiden otsikon määrittelee elementin `otsikko`-attribuutin arvo. Jos otsikkotekstiä ei ole näin määritelty, otsikoksi asetetaan  `wjr-btn`-attribuutin arvo.
 
-Painikkeen `click`-tapahtuman käsittelijäksi asetetaan funktio, joka kutsuu ao. kontrollerin määrittelemää metodia. Jos `wso-btn`-attribuutin arvona on `add`, tapahtumakäsittelijä kutsuu metodia `add` so. attribuutin arvo määrää kutsuttavan metodin. Metodikutsun parametriksi annetaan ao. elementti. Direktiivi ei kuitenkaan aseta tapahtumakäsittelijää, jos ao. kontrollerilta ei löydy `wso-btn`-attribuutin arvoa vastaavaa metodia.
+Painikkeen `click`-tapahtuman käsittelijäksi asetetaan funktio, joka kutsuu ao. kontrollerin määrittelemää metodia. Jos `wjr-btn`-attribuutin arvona on `add`, tapahtumakäsittelijä kutsuu metodia `add` so. attribuutin arvo määrää kutsuttavan metodin. Metodikutsun parametriksi annetaan objekti, joka sisältää kaikki elementin sisältämät attribuutit.
 
 Sovelluksen pohjassa olevan pääsivun `index.html` merkkaus on seuraava:
 
@@ -104,48 +96,35 @@ Sovelluksen pohjassa olevan pääsivun `index.html` merkkaus on seuraava:
 
         <div ng-include=" 'view/template.html'"></div>
 
-        <script>
-
-            PuhApp = angular.module('PuhApp', []);
-
-            PuhApp.constant('WSO_BTN', {
-                add: 'Lisää',
-                remove: 'X'
-            });
-
-        </script>
-
-        <script src="js/service.js"></script>
-
-        <script src="todo/controller.js"></script>
-        <script src="todo/directive.js"></script>
+        <script src="js/PuhAppModule.js"></script>
+        <script src="js/PuhService.js"></script>
+        <script src="js/PuhController.js"></script>
+        
+        <script src="todo/wjr-btn.js"></script>
 
     </body>
 
 {% endhighlight %}
 
-Pääsivun viittaamista tiedostoista `template.html` on pohjassa valmiina. Tiedoston `service.js` voi kopioida sellaisenaan edellisen tehtävän ratkaisusta. *Direktiivi* laaditaan tiedostoon `directive.js`. Kontrollerin `controller.js` lähtökohdaksi voi ottaa edellisen tehtävän ratkaisun, mutta se edellyttää pieniä muutoksia[^1].
+Pääsivun viittaamista tiedostoista `template.html` ja `PuhAppModule.js` ovat pohjassa valmiina. Tiedostot `PuhService.js` ja `PuhController.js`[^1] voi kopioida edellisen tehtävän ratkaisusta. *Direktiivi* laaditaan tiedostoon `wjr-btn.js`. 
 
-[^1]: Muutostarve kohdistuu `remove`-metodiin: tieto poistettavasta puhelinnumerosta (nimi, numero) ei tule tässä suoraan parametreina vaan parametrina välitetään klikattu button -elementti, josta attribuuteitteihin `data-nimi` ja `data-numero` on talletettu poistossa tarvittavat tiedot.
+[^1]: Kontrollerin `remove`-metodin otsikon on kuitenkin oltava muotoa `function({nimi, numero})`, jolloin metodikutsun välittämästä objektista saadaan tarvittavat tiedot muuttujiin `nimi` ja `numero` ([destructuring assignment][destructuring_assignment]).
 
+[destructuring_assignment]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
-**Palauta** tehtävästä tiedostot `controller.js` ja `directive.js`. Varmista ennen palautusta, että sovellus toimii odotetusti. Jos pohjakoodi sisältää testejä, varmista myös niiden läpimeno ilman virheilmoituksia.
-
+**Palauta** tehtävästä tiedosto `wjr-btn.js`. Varmista ennen palautusta, että sovellus toimii odotetusti. Jos pohjakoodi sisältää testejä, varmista myös niiden läpimeno ilman virheilmoituksia.
 
 ### Lisätietoja
 
-[Tehtävään liittyvä keskustelu](https://moodle2.tut.fi/mod/forum/discuss.php?d=69661)
+AngularJS -direktiivejä käsitellään lyhyesti Web-selainohjelmointi -aineiston [kohdassa 12.6][weso-12.6]. Laajempi esitys asiasta löytyy AngularJS:n [kehittäjän oppaasta][guide].
 
-AngularJS -direktiivejä käsitellään lyhyesti kurssilukemiston [kohdassa 12.6][weso-12.6]. Laajempi esitys asiasta löytyy AngularJS:n [kehittäjän oppaasta][guide].
-
-[weso-12.6]: {{site.baseurl}}/weso/#12.6-Direktiivit
+[weso-12.6]: http://web-selainohjelmointi.github.io/#12.6-Direktiivit
 [guide]: https://docs.angularjs.org/guide/directive
 
 *AngularJS*:n elementti-objektit muistuttavat hieman *jQuery*-objekteja, mutta esim. läheskään kaikki *jQuery*:n metodit eivät ole käytettävissä, ks. [angular.element][angular.element].
 
 [angular.element]: https://docs.angularjs.org/api/ng/function/angular.element
 
-#### Alaviitteet
 
+<br/>
 
-{% endcomment %}
