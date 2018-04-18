@@ -46,7 +46,7 @@ Seuraavassa on sovelluksen käyttöliittymä:
 
 [Aiempien tehtävien](../../osa1) puhelinmuistio -toteutuksista poiketen tässä ei ole *Etsi* -painiketta. Henkilölle talletetut numerot ilmestyvät sivulle heti, kun `Nimi`-kenttään[^2] on kirjattu henkilö, jolle on talletettu numeroita.
 
-[^2]: numerot tulevat esiin, vaikka kursori olisi edelleen `Nimi`-kenttässä
+[^2]: Numerot tulevat esiin, vaikka kursori olisi edelleen `Nimi`-kenttässä.
 
 
 Puhelinmuistio näkyy objektissa `puh`, jota käsitellään metodeilla `anneNumerot`, `lisaaNumero` ja `poistaNumero` (ks. `puhelinmuistio.js`) 
