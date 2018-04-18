@@ -1,18 +1,11 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.1: Puhelinmuistio: AngularJS"
-exercise_template_name: # W4E01.PuhAngular
-exercise_discussion_id: # 99280
-exercise_upload_id: # 382321
-modified_at: 16.4.2018
-kesken: 1
-julkaisu: 18.4.2018
-no_review: 1
+title: "Tehtävä 4.1: Puhelinmuistio: AngularJS (2p)"
+exercise_template_name: W4E01.PuhAngular
+exercise_discussion_id: 99280
+exercise_upload_id: 382321
+modified_at: 18.4.2018
 ---
-
-Puhelinmuistio: AngularJS
-
-{% comment %}
 
 Laadi [osan 1](../../osa1) tehtävistä tuttu puhelinmuistio-sovellus[^0] nyt kuitenkin AngularJS -toteutuksena.
 
@@ -63,4 +56,3 @@ Puhelinmuistio näkyy objektissa `puh`, jota käsitellään metodeilla `anneNume
 
 <br/>
 
-{% endcomment %}

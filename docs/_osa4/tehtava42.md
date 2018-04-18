@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.2: Puhelinmuistio: Service"
+title: "Tehtävä 4.2: Puhelinmuistio: Service (2p)"
 exercise_template_name: # W4E02.PuhService
 exercise_discussion_id: # 99281
 exercise_upload_id: # 382322

@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.4: Puhelinmuistio: Routing"
+title: "Tehtävä 4.4: Puhelinmuistio: Routing (3p)"
 exercise_template_name: # W4E04.PuhRouting
 exercise_discussion_id: # 99283 
 exercise_upload_id: # 382324

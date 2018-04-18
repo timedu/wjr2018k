@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.3: Puhelinmuistio: Directive"
+title: "Tehtävä 4.3: Puhelinmuistio: Directive (3p)"
 exercise_template_name: # W4E03.PuhDirective
 exercise_discussion_id: # 99282
 exercise_upload_id: # 382323

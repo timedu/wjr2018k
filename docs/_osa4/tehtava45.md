@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.5: Hello Firebase"
+title: "Tehtävä 4.5: Hello Firebase (2p)"
 exercise_template_name: # W4E05.HelloFirebase
 exercise_discussion_id: # 99284
 exercise_upload_id: # 382325

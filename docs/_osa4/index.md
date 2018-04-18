@@ -1,7 +1,7 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-modified_at: 16.4.2018
+modified_at: 18.4.2018
 kesken: 1
 julkaisu: 18.4.2018
 ---
@@ -17,18 +17,12 @@ Kurssin [edellisessä osassa](../osa3) tutustuttiin jo [AngularJS][AngularJS] -s
 
 Tämä osa jatkaa vielä Angular-teemalla. Edellisen osan tehtävissä hyödynnettiin jo valmiita Angular-palveluja. Tässä osassa esitellään palvelu, jonka avulla sovellus voi olla yhteydessä verkossa toimivaan tietokantaan. Osassa tutustutaan myös siihen, miten voidaan laatia omia palveluja ja injektoida niitä sovelluksen muiden moduulien käyttöön. Angular-näkymät perustuvat diretiiviiveihin, jotka voivat esiintyä merkkauksessa elementteinä tai elementtien attribuutteina. Tämä osa esittelee, miten kehitetään omia  näkymissä käytettäviä direktiivejä. Osan yhtenä teemana on vielä sovelluksen reitytys, johon [kurssilukemisto][weso] johdattelee seuraavasti:
 
-[weso]: {{site.baseurl}}/weso/
-
 > Isompi sovellus on usein jaettu useaan eri näkymään, jotka löytyvät eri poluista, kuten `/elokuvat`, `/elokuvat/1` ja `elokuvat/uusi`. Perinteisesti sovelluksen polut määritetään palvelinpuolen sovelluksessa, mutta kasva trendi on toteuttaa ainakin osa sovelluksen reitityksestä selainpuolella, jolloin sovelluksessa uuteen polkuun siirtyminen ei rasita niin paljon palvelinta. Näitä sovelluksia kutsutaan nimellä *Single-page application*.
 
-[AngularJS][AngularJS] on esillä [kurssilukemiston][weso] luvuissa
-[12. Sovelluksen rakenteen hallinta: AngularJS]({{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS),
-[13. Jatketaan keskustelua palvelimen kanssa: Firebase]({{site.baseurl}}/weso/#13-Jatketaan-keskustelua-palvelimen-kanssa:-Firebase),
-[15. Reititys Angularissa]({{site.baseurl}}/weso/#15-Reititys-Angularissa) ja
-[17. Suurempi Angular-sovellus: Elokuvakirjasto]({{site.baseurl}}/weso/#17-Suurempi-Angular-sovellus:-Elokuvakirjasto).   
-
+[weso]: {{site.baseurl}}/weso/
 
 {% endcomment %}
+
 
 
 ### Tehtävät
@@ -42,6 +36,18 @@ Tämän osan tehtävissä palataan jo edellisissä osissa esillä olleeseen puhe
 
 
 {% include exercises_list.md %}
+
+
+{% assign weso = 'http://web-selainohjelmointi.github.io' %}
+
+[Web-selainohjelmointi]({{weso}}) käsittelee 
+[AngularJS](https://docs.angularjs.org/guide/introduction)-sovelluskehystä luvuissa
+[12. Sovelluksen rakenteen hallinta: AngularJS]({{weso}}/#12-Sovelluksen-rakenteen-hallinta:-AngularJS),
+[13. Jatketaan keskustelua palvelimen kanssa: Firebase]({{weso}}/#13-Jatketaan-keskustelua-palvelimen-kanssa:-Firebase),
+[15. Reititys Angularissa]({{weso}}/#15-Reititys-Angularissa) ja
+[17. Suurempi Angular-sovellus: Elokuvakirjasto]({{weso}}/#17-Suurempi-Angular-sovellus:-Elokuvakirjasto).   
+
+
 
 {% comment %}
 

@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.6: Puhelinmuistio: Firebase"
+title: "Tehtävä 4.6: Puhelinmuistio: Firebase (3p)"
 exercise_template_name: # W4E06.PuhFirebase
 exercise_discussion_id: # 99285
 exercise_upload_id: # 382326
