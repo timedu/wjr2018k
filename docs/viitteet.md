@@ -10,6 +10,19 @@ modified_at: 7.3.2018
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (MDN)   
 [Web-selainohjelmointi](http://web-selainohjelmointi.github.io/) (Helsingin yliopisto)  
 
+[AngularJS](https://angularjs.org)
+
+* [API Reference](https://docs.angularjs.org/api)
+* [Developer Guide](https://docs.angularjs.org/guide)  
+* [Angular's jqLite](https://docs.angularjs.org/api/ng/function/angular.element#angular-s-jqlite)
+
+[AngularFire](https://github.com/firebase/angularfire)  
+
+* [API Reference](https://github.com/firebase/angularfire/blob/master/docs/reference.md)
+* [AngularFire Guide](https://github.com/firebase/angularfire/blob/master/docs/guide/README.md)
+
+
+
 
 {% comment %}
 

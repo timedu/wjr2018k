@@ -3,7 +3,7 @@ layout: collection_index
 permalink: /:collection/index.html
 modified_at: 19.4.2018
 kesken: 1
-julkaisu: täydennettynä 19.4.2018
+julkaisu: täydennettynä 20.4.2018
 ---
 
 [AngularJS](https://docs.angularjs.org/guide/introduction)
