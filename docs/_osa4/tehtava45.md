@@ -12,6 +12,8 @@ no_review: 1
 
 Hello Firebase
 
+vrt. <https://timedu.github.io/wso/osa5/tehtava55/>
+
 {% comment %}
 
 Tämä on [seuraavaa tehtävää](../tehtava46) valmisteleva tehtävä, joka perustuu kurssilukemiston [Tehtävään 35]({{site.baseurl}}/weso/#vk-5-t35). Seuraavassa tehtäväkuvauksen lähtökohtana on lähteestä poimittu lainaus, jota on tässä hivenen muokattu.

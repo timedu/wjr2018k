@@ -12,6 +12,8 @@ no_review: 1
 
 Puhelinmuistio: Firebase
 
+vrt. <https://timedu.github.io/wso/osa5/tehtava56/>
+
 {% comment %}
 
 Laadi puhelinmuistiosovellus, joka on ulkoiselta käyttäytymiseltään pääosin [tehtävän 4.4](../tehtava44) ratkaisun kaltainen. Laadittava sovellus kuitenkin tukeutuu tietojen talletuksen osalta [Firebase-tietokantaan][firebase-db]. Sovelluksen käyttö myös edellyttää käyttäjältään tunnistautumista, mikä toteteutetaan [Firebasen autentikointipalvelulla][firebase-auth].
