@@ -4,16 +4,15 @@ title: "Tehtävä 4.4: Puhelinmuistio: Routing (3p)"
 exercise_template_name: # W4E04.PuhRouting
 exercise_discussion_id: # 99283 
 exercise_upload_id: # 382324
-modified_at: 16.4.2018
+modified_at: 18.4.2018
 kesken: 1
-julkaisu: 18.4.2018
+julkaisu: 19.4.2018
 no_review: 1
 ---
 
 Puhelinmuistio: Routing
 
 {% comment %}
-
 
 Kehitä puhelinmuistio-sovellusta edelleen siten, että se muodostuu käyttäjän näkökulmasta kolmesta erillisestä sivusta (Kuvat 1-3).
 
@@ -79,6 +78,6 @@ AngularJS:n reititystä käsitellään lyhyesti kurssilukemiston [luvussa 15][we
 
 
 
-#### Alaviitteet
+<br/>
 
 {% endcomment %}

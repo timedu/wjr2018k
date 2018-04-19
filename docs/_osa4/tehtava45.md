@@ -6,7 +6,7 @@ exercise_discussion_id: # 99284
 exercise_upload_id: # 382325
 modified_at: 16.4.2018
 kesken: 1
-julkaisu: 18.4.2018
+julkaisu: 19.4.2018
 no_review: 1
 ---
 
