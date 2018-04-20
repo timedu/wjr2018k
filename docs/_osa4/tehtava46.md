@@ -4,26 +4,43 @@ title: "Tehtävä 4.6: Puhelinmuistio: Firebase (3p)"
 exercise_template_name: # W4E06.PuhFirebase
 exercise_discussion_id: # 99285
 exercise_upload_id: # 382326
-modified_at: 16.4.2018
-kesken: 1
-julkaisu: 20.4.2018
+modified_at: 20.4.2018
 no_review: 1
+julkaisu: 21.4.2018
+kesken: 1
 ---
 
-Puhelinmuistio: Firebase
-
-vrt. <https://timedu.github.io/wso/osa5/tehtava56/>
+Puhelinmuistio: Firebase 
 
 {% comment %}
 
-Laadi puhelinmuistiosovellus, joka on ulkoiselta käyttäytymiseltään pääosin [tehtävän 4.4](../tehtava44) ratkaisun kaltainen. Laadittava sovellus kuitenkin tukeutuu tietojen talletuksen osalta [Firebase-tietokantaan][firebase-db]. Sovelluksen käyttö myös edellyttää käyttäjältään tunnistautumista, mikä toteteutetaan [Firebasen autentikointipalvelulla][firebase-auth].
+
+Ratkaisu-stepit
+
+0. Lähtökohta: PuhRouting
+
+1. Tiedostojen kopiointi tehtävästä 4.4 oikeisiin kansioihin ja reititystiedon (config.js) editointi.
+
+(palautettava aineisto
+route.config.js -> config.js
+firebase.db.service.js -> PuhService.js
+search.controller.js -> PuhController.js
+search.view.html -> search.html)
+
+
+
+
+
+
+
+Laadi puhelinmuistiosovellus, joka on ulkoiselta käyttäytymiseltään pääosin [Tehtävän 4.4](../tehtava44) ratkaisun kaltainen. Laadittava sovellus kuitenkin tukeutuu tietojen talletuksen osalta [Firebase-tietokantaan][firebase-db]. Sovelluksen käyttö myös edellyttää käyttäjältään tunnistautumista, mikä toteteutetaan [Firebasen autentikointipalvelulla][firebase-auth].
 
 [firebase-db]: https://firebase.google.com/docs/database/
 [firebase-auth]: https://firebase.google.com/docs/auth/
 
 ### Käyttöliittymä
 
-Sovelluksen ulkoasu ja reititys on pääosin kuten [tehtävässä 4.4](../tehtava44). Tunnistautumisvaatimus kuitenkin tuo näihin pieniä muutoksia.
+Sovelluksen ulkoasu ja reititys on pääosin kuten [Tehtävässä 4.4](../tehtava44). Tunnistautumisvaatimus kuitenkin tuo näihin pieniä muutoksia.
 
 ![ui-1](../img/w4e06-1.png "ui-1"){: style="display: block; margin: auto; margin-top: 10px; width: 400px;"}
 
@@ -41,7 +58,7 @@ Käyttäjä tunnistautuu klikkaamalla *Login* -painiketta. Jos tunnistautuminen 
 
 #### Reititys
 
-Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkeiden ja linkkien ohella myös suorilla osoitteilla (vrt. [Tehtävä 4.4](../tehtava44)). Jos kirjautumista ei ole tehty, on suoralla osoitteella pääsy ainoastaan sovelluksen juuriosoitteeseen (`/W4E06/#/` tai `/W4E06/`), joka tuo esiin *Hae numeroita* -näkymän. Yritys muuhun osoitteeseen (esim. `/W4E06/#/bart`, `/W4E06/#/bart/remove/111` tai `/W4E06/#/jotakin/muuta`) palauttaa käsittelyn juuriosoitteeseen.
+Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkeiden ja linkkien ohella myös suorilla osoitteilla (vrt. [Tehtävä 4.4](../tehtava44)). Jos kirjautumista ei ole tehty, on suoralla osoitteella pääsy ainoastaan sovelluksen juuriosoitteeseen (`/W4E06/#!/` tai `/W4E06/`), joka tuo esiin *Hae numeroita* -näkymän. Yritys muuhun osoitteeseen (esim. `/W4E06/#/bart`, `/W4E06/#!/bart/remove/111` tai `/W4E06/#!/jotakin/muuta`) palauttaa käsittelyn juuriosoitteeseen.
 
 
 ### Tietokanta

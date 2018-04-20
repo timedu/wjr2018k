@@ -29,11 +29,10 @@ Muokkaa sitten  tehtäväpohjan tiedostoa `HelloApp.js` siten, että sovellus es
 
 <small>Kuva 1. </small>
 
-
 **Palauta** tehtävästä tiedosto `HelloApp.js`, kun sovellus toimii odotetusti. 
 
 
-### Lisätietoja
+### Vihjeitä ja lisätietoja
 
 #### Tietokannan perustamisesta
 
