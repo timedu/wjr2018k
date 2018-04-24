@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 5.2"
+title: "Tehtävä 5.2: UniCafe (6p)"
 exercise_template_name: #
 exercise_discussion_id: #
 exercise_upload_id: #
