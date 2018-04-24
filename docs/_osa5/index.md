@@ -3,12 +3,14 @@ layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
 modified_at: 24.4.2018
+julkaisu: 25.4.2018
 ---
 
 > [React](https://reactjs.org) is a front-end library developed by Facebook. It is used for handling the view layer for web and mobile apps. ReactJS allows us to create reusable UI components. It is currently one of the most popular JavaScript libraries and has a strong foundation and large community behind it.  
 [ [ReactJS Tutorial](https://www.tutorialspoint.com/reactjs/index.htm) ]
 
-<https://fullstackopen.github.io/>
+Lähdemateriaali: [Full stack open 2018](https://fullstackopen.github.io/)
+([sisällysluettelo]({{site.baseurl}}/fullstack))
 
 
 ### Tehtävät

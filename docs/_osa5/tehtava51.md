@@ -9,7 +9,7 @@ modified_at: 24.4.2018
 
 {% assign fullstack = "https://fullstackopen.github.io" %}
 
-Laadi [Full stack open 2018]({{fullstack}}) materiaalin tehtävät
+Ratkaise [Full stack open 2018]({{fullstack}}) materiaalin tehtävät
 
 &nbsp; &nbsp; [(1.1) Vaihe 1: Jako komponenteiksi]({{fullstack}}/tehtävät#11-jako-komponenteiksi)   
 &nbsp; &nbsp; [(1.2) Vaihe 2: Lisää komponentteja]({{fullstack}}/tehtävät#12-lisää-komponentteja)   
@@ -45,5 +45,6 @@ Rakennettava `App`-komponentti laaditaan erilliseen tiedostoon, jonka päämoduu
 
 **Palauta** tehtävästä **yksi** tiedostoista `App-1.js`, `App-2.js`, `App-3.js`, `App-4.js` tai `App-5.js` riippuen siitä, mihin vaiheeseen asti ratkaisua olet vienyt.
 
-Editoriksi materiaali ehdottaa [Visual Studio Codea](https://code.visualstudio.com/) tai [Atomia]( https://atom.io/), joista molemmat voi ladata veloituksetta. 
+Editoriksi materiaali ehdottaa [Visual Studio Codea](https://code.visualstudio.com/) tai [Atomia]( https://atom.io/), joista molemmat voi ladata veloituksetta. Tarvittavista työkaluista kerrotaan materiaalin kohdassa [Alkutoimet]({{fullstack}}/osa0#alkutoimet). *Git:iä* ei tarvita, koska ratkaisut palautetaan *Moodle:en*. *Chrome:n* ohella selaimena voi käyttää *Firefox:ia*.
+
 
