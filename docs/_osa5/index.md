@@ -1,21 +1,32 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-kesken: 1
-modified_at: 25.4.2018
-julkaisu: vielä täydennettynä 26.4.2018
+modified_at: 26.4.2018
 ---
 
-> [React](https://reactjs.org) is a front-end library developed by Facebook. It is used for handling the view layer for web and mobile apps. ReactJS allows us to create reusable UI components. It is currently one of the most popular JavaScript libraries and has a strong foundation and large community behind it.  
-[ [ReactJS Tutorial](https://www.tutorialspoint.com/reactjs/index.htm) ]
+[React][React] on osakseen [kasvavan suosion][score] saanut web-käyttöliittymien rakentamista tukeva JavaScript-kirjasto. 
 
-Lähdemateriaali: [Full stack open 2018](https://fullstackopen.github.io/)
-([sisällysluettelo]({{site.baseurl}}/fullstack))
+Kurssin [Osan 2](../osa2) [Backbone][Backbone]-teeman yhteydessä oli esillä [Handlebars][Handlebars]-kirjasto. Käyttöliittymä rakennettiin lisäämällä html-merkkauksen oheen paikkoja dokumenttiin sisällytettävälle datalle sekä ns. *helpereitä*, joiden avulla esitettiin html:n ohessa esim. ehto- ja silmukkarakenteita. Osissa [3](../osa3) ja [4](../osa4) takasteltu [AngularJS][AngularJS] sisälsi oman [template][template]-tekniikkansa käyttöliittyminen rakentamiseen, missä html-merkkausta täydennettiin lisäattribuuteilla, ns. *direktiiveillä*, joilla voitiin esittää mm. ohjausrakenteita. *Handlebars* sisältää joukon valmiita *helpereitä* ja *AngularJS* valmiita *direktiivejä*, mutta kummassakin tapauksessa template-kieltä voidaan laajentaa laatimalla omia *helpereitä* tai *direktiivejä*.
+
+Sekä *Handlebars*- että *AngularJS* -pohjaiset käyttöliittymät rakennetaan siten, että html-merkkausta täydennetään erityisillä lisäosilla esim. ohjausrakenteita varten. *React:in* yhteydessä toimitaan vastakkaisella tavalla niin, että JavaScript-koodiin oheen sisällytetään html-merkkausta muistuttavia rekenteita. Nämä rakenteet perustuvat [JSX][JSX]-kieleen, mikä sitten käänetään JavaScript:ksi. *React*-pohjainen sovellus muodostuu hierarkkisesti jäsentyvistä käyttöliittymäkomponenteista.
+
+
+[React]: https://reactjs.org
+[score]: https://hotframeworks.com/frameworks/react
+[Backbone]: http://backbonejs.org
+[Handlebars]: http://handlebarsjs.com
+[AngularJS]: https://angularjs.org
+[template]: https://docs.angularjs.org/guide/templates
+[JSX]: https://facebook.github.io/jsx/
+
+
+Lähdemateriaalina tässä käytetään Helsingin yliopistossa laaditun avoimen verkkokurssin [Full stack open 2018](http://mooc.fi/courses/2018/fullstack/) [aineistoa](https://fullstackopen.github.io/), jonka [sisällysluettelo]({{site.baseurl}}/fullstack) löytyy kootusti tältä sivustolta.
+
 
 
 ### Tehtävät
 
-Tämän osan kaikki tehtävät on perustuvat lähdemateriaaliin. Poimitut 14 tehtävää on ryhmitehty kolmeksi tehtäväksi siten, että yksi lähteen tehtävä vastaa tässä yhtä tehtävän vaihetta. 
+Tämän osan kaikki tehtävät on perustuvat [lähdemateriaaliin](https://fullstackopen.github.io/tehtävät/#osa-1). Poimitut 14 tehtävää on ryhmitehty kolmeksi tehtäväksi siten, että yksi lähteen tehtävä vastaa tässä yhtä tehtävän vaihetta. Tehtävien ratkaisut palautetaan edellisten osien tapaan Moodleen.
 
 {% include exercises_list.md %}
 
@@ -31,7 +42,7 @@ Tämän osan kaikki tehtävät on perustuvat lähdemateriaaliin. Poimitut 14 teh
 
 ### Lisätietoja
 
-* <https://www.udacity.com/course/react-fundamentals--cx43>
-* <https://www.edx.org/course/introduction-to-reactjs>
-* <https://www.tutorialspoint.com/reactjs/index.htm>
-* <https://facebook.github.io/jsx/>
+[React Fundamentals](https://www.udacity.com/course/react-fundamentals--cx43) (Udacity)   
+[Introduction to ReactJS](https://www.edx.org/course/introduction-to-reactjs) (edX)  
+[ReactJS Tutorial](https://www.tutorialspoint.com/reactjs/index.htm) (TutorialsPoint)
+
