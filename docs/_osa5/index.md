@@ -8,7 +8,7 @@ modified_at: 26.4.2018
 
 Kurssin [Osan 2](../osa2) [Backbone][Backbone]-teeman yhteydessä oli esillä [Handlebars][Handlebars]-kirjasto. Käyttöliittymä rakennettiin lisäämällä html-merkkauksen oheen paikkoja dokumenttiin sisällytettävälle datalle sekä ns. *helpereitä*, joiden avulla esitettiin html:n ohessa esim. ehto- ja silmukkarakenteita. Osissa [3](../osa3) ja [4](../osa4) takasteltu [AngularJS][AngularJS] sisälsi oman [template][template]-tekniikkansa käyttöliittyminen rakentamiseen, missä html-merkkausta täydennettiin lisäattribuuteilla, ns. *direktiiveillä*, joilla voitiin esittää mm. ohjausrakenteita. *Handlebars* sisältää joukon valmiita *helpereitä* ja *AngularJS* valmiita *direktiivejä*, mutta kummassakin tapauksessa template-kieltä voidaan laajentaa laatimalla omia *helpereitä* tai *direktiivejä*.
 
-Sekä *Handlebars*- että *AngularJS* -pohjaiset käyttöliittymät rakennetaan siten, että html-merkkausta täydennetään erityisillä lisäosilla esim. ohjausrakenteita varten. *React:in* yhteydessä toimitaan vastakkaisella tavalla niin, että JavaScript-koodiin oheen sisällytetään html-merkkausta muistuttavia rekenteita. Nämä rakenteet perustuvat [JSX][JSX]-kieleen, mikä sitten käänetään JavaScript:ksi. *React*-pohjainen sovellus muodostuu hierarkkisesti jäsentyvistä käyttöliittymäkomponenteista.
+Sekä *Handlebars*- että *AngularJS* -pohjaiset käyttöliittymät rakennetaan siten, että html-merkkausta täydennetään erityisillä lisäosilla esim. ohjausrakenteita varten. *React:in* yhteydessä toimitaan vastakkaisella tavalla niin, että JavaScript-koodiin oheen sisällytetään html-merkkausta muistuttavia rekenteita. Nämä rakenteet perustuvat [JSX][JSX]-kieleen, mikä sitten käänetään JavaScript:iksi. *React*-pohjainen sovellus muodostuu hierarkkisesti jäsentyvistä JSX:n avulla kuvatuista käyttöliittymäkomponenteista.
 
 
 [React]: https://reactjs.org
@@ -42,7 +42,7 @@ Tämän osan kaikki tehtävät on perustuvat [lähdemateriaaliin](https://fullst
 
 ### Lisätietoja
 
+[React Documents](https://reactjs.org/docs/)   
 [React Fundamentals](https://www.udacity.com/course/react-fundamentals--cx43) (Udacity)   
 [Introduction to ReactJS](https://www.edx.org/course/introduction-to-reactjs) (edX)  
 [ReactJS Tutorial](https://www.tutorialspoint.com/reactjs/index.htm) (TutorialsPoint)
-
