@@ -1,16 +1,16 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-kesken: 1
-modified_at: 8.5.2018
-julkaisu: täydennettynä 9.5.2018
+modified_at: 9.5.2018
 ---
 
+Tässä osassa jatketaan [edellisen osan](../osa5) *React* -teemaa käyttäen ohjenuorana Helsingin [Full stack open 2018](https://fullstackopen.github.io/osa2/) -materiaalia. *Edellinen osa* tarkasteli React-kirjaston perusteita kuten funktiona ja luokkasyntaksilla määriteltäviä komponentteja, tietojenvälitystä komponentista toiseen, komponentin tilaa ja sen ylläpitoa sekä reagointia komponentteihin liittyviin tapahtumiin. *Tässä osassa* esillä olevia keskeisiä aiheita ovat mm.
+JavaScriptin taulukkometodien käyttö käyttöliittymän muodostamisessa, komponenttien jako erillisiin tiedostoihin, html-lomakkeet sekä kommunikointi palvelimen kanssa. Kuten edellisessäkin osassa lähdemateriaali johdattelee aiheisiin kehittelemällä vaiheittain esimerkkinä toimivaa muistiinpano-sovellusta.
 
 
 ### Tehtävät
 
-Myös tämän osan kaikki tehtävät on perustuvat [lähdemateriaaliin](https://fullstackopen.github.io/tehtävät/#osa-2). Poimitut 19 tehtävää on ryhmitehty kolmeksi tehtäväksi siten, että yksi lähteen tehtävä vastaa tässä yhtä tehtävän vaihetta. Tehtävien ratkaisut palautetaan edellisten osien tapaan Moodleen. Osan enimmäissuoritukseen riittää 15 tehtäväpistettä, minkä saavuttaminen ei edellytä aivan kaikkien vaiheiden ratkaisua.
+Myös tämän osan kaikki tehtävät on perustuvat [lähdemateriaaliin](https://fullstackopen.github.io/tehtävät/#osa-2). Lähteen 19 tehtävää on ryhmitehty kolmeksi tehtäväksi siten, että yksi lähteen tehtävä vastaa tässä yhtä tehtävän vaihetta. Tehtävien ratkaisut palautetaan edellisten osien tapaan Moodleen. Osan enimmäissuoritukseen riittää 15 tehtäväpistettä, minkä saavuttaminen ei edellytä aivan kaikkien vaiheiden ratkaisua.
 
 {% include exercises_list.md %}
 
