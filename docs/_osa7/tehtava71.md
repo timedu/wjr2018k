@@ -11,7 +11,7 @@ modified_at: 15.5.2018
 
 Ratkaise [Full stack open 2018]({{fullstack}}) materiaalin tehtävät
 
-&nbsp; &nbsp; [(3.1) Vaihe 1: Koko luetettelo]({{fullstack}}/tehtävät#31-puhelinluettelon-backend-osa-1)   
+&nbsp; &nbsp; [(3.1) Vaihe 1: Koko luettelo]({{fullstack}}/tehtävät#31-puhelinluettelon-backend-osa-1)   
 &nbsp; &nbsp; [(3.2) Vaihe 2: Info-sivu]({{fullstack}}/tehtävät#32-puhelinluettelon-backend-osa-2)  
 &nbsp; &nbsp; [(3.3) Vaihe 3: Yksi numero]({{fullstack}}/tehtävät#33-puhelinluettelon-backend-osa-3)  
 &nbsp; &nbsp; [(3.4) Vaihe 4: Numeron poisto]({{fullstack}}/tehtävät#34-puhelinluettelon-backend-osa-4)  
