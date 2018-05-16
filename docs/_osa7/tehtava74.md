@@ -2,12 +2,9 @@
 layout: exercise_page
 title: "Tehtävä 7.4: Puhelinluettelo - fullstack (7p)"
 exercise_template_name: # w7e04.puhelinluettelo-fullstack
-exercise_discussion_id: # 100546
-exercise_upload_id: # 384891
-modified_at: 15.5.2018
-kesken: 1
-no_review: 1
-julkaisu: 16.5.2018
+exercise_discussion_id: 100546
+exercise_upload_id: 384891
+modified_at: 16.5.2018
 ---
 
 {% assign fullstack = "https://fullstackopen.github.io" %}
@@ -23,7 +20,7 @@ Ratkaise [Full stack open 2018]({{fullstack}}) materiaalin tehtävät
 &nbsp; &nbsp; [(3.19) Vaihe 7: Duplikaatin esto]({{fullstack}}/tehtävät#319-puhelinluettelo-ja-tietokanta-osa-7)   
 
 
-Tässä voi lähteä liikkeelle [Tehtävän 7.2](../tehtava72) ratkaisusta, jossa frontend ja backend ovat samassa työhakemistossa. Tehtäväpohja ehdottaa seuraavanlaista rakennetta:
+Tehtävässä ei ole mukana pohjakoodia. Liikkeelle voi lähteä  [Tehtävän 7.2](../tehtava72) ratkaisusta, jossa *frontend* ja *backend* ovat samassa työhakemistossa. *backend*  edellyttää muokkaamista. Täydennykset voi toteuttaa esim. hakemistoon `backend/todo` seuraavanlaisesti:
 
 ~~~~
 [backend]
@@ -31,7 +28,7 @@ Tässä voi lähteä liikkeelle [Tehtävän 7.2](../tehtava72) ratkaisusta, joss
     [todo]
         [models]
             db-config.js
-            persons.js
+            person.js
         server-1.js
         server-2.js
         ...
@@ -54,7 +51,38 @@ Tässä voi lähteä liikkeelle [Tehtävän 7.2](../tehtava72) ratkaisusta, joss
 package.json    
 ~~~~
 
-{% comment %}
+Ehdotuksessa `backend/index.js` on *backendin* päämoduuli, joka käyttöönsä ratkaisun vaihetta edustavan moduulin:
+
+{% highlight js %}
+
+require('./server')
+// require('./todo/server-1')
+// require('./todo/server-2')
+// ...
+// require('./todo/server-7')
+
+{% endhighlight %}
+
+`backend/server.js` edustaa tässä lähtökohtana olevaa [Tehtävän 7.2](../tehtava72) *backend*-osuuden ratkaisua. Tietokannan *url* on määritelty [edellisen tehtävän](../tehtava73) tapaan tiedostoon `db-config.js`, jonka tässä laadittava *model*-moduuli (`person.js`) ottaa käytöönsä:
+
+{% highlight js %}
+
+const mongoose = require('mongoose')
+const url = require('./db-config')
+mongoose.connect(url)
+...
+
+{% endhighlight %}
+
+Tietokantaa hyödyntävä *REST*-rajapinnan toteuttava moduuli ottaa sitten käyttöönsä *model*-moduulin:
+
+{% highlight js %}
+
+...
+const Person = require('./models/person')
+...
+
+{% endhighlight %}
 
 
 Käy ennen tehtävien ratkaisua läpi materiaalin
@@ -62,9 +90,5 @@ Käy ennen tehtävien ratkaisua läpi materiaalin
 
 Laadi ratkaisu kumulatiivisesti siten, että seuraavan vaiheen ratkaisu sisältää myös edellisten vaiheiden ratkaisut. 
 
-Tehtäväpohja on rakennettu siten, että `index.js` on sovelluksen päämoduuli, joka ottaa käyttöönsä `todo`-kansiossa olevan tehtävän vaiheen ratkaisun sisältävän moduulin riippuen päämoduulin aktiivisesta rivistä. 
+**Palauta** tehtävästä tiedosto `person.js` sekä yksi tiedostoista `server-1.js` - `server-7.js` riippuen siitä, mihin vaiheeseen asti ratkaisua olet vienyt.
 
-
-**Palauta** tehtävästä tiedosto `package.json` sekä yksi tiedostoista `index-1.js` - `index-8.js` riippuen siitä, mihin vaiheeseen asti ratkaisua olet vienyt.
-
-{% endcomment %}
